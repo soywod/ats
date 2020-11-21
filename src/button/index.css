@@ -1,0 +1,41 @@
+button[is="ats-button"] {
+  background-color: var(--primary-color-fg, white);
+  border-color: gainsboro;
+  border-radius: 0.15rem;
+  border-style: solid;
+  border-width: 1px;
+  color: rgba(0, 0, 0, 0.65);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: var(--font-family);
+  font-size: 1rem;
+  line-height: 1.2;
+  padding: 0.25rem 0.5rem;
+  transition-duration: 125ms;
+  transition-property: background, color, border;
+}
+
+button[is="ats-button"]:focus {
+  outline: none;
+}
+
+button[is="ats-button"]:not([disabled]):hover {
+  background: whitesmoke;
+  border-color: var(--primary-color-bg, dodgerblue);
+  outline: none;
+}
+
+button[is="ats-button"]:not([disabled]):focus {
+  border-color: var(--primary-color-bg, dodgerblue);
+  box-shadow: 0 0 0 2px rgba(30, 144, 255, 0.2);
+}
+
+button[is="ats-button"][disabled] {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+button[is="ats-button"]:not([disabled])[active] {
+  background: var(--primary-color-bg, dodgerblue);
+  color: var(--primary-color-fg, white);
+}
