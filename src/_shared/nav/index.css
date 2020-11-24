@@ -22,20 +22,36 @@ nav {
 }
 
 a {
-  border-bottom: 3px solid transparent;
   color: var(--black);
   font-family: Lato, sans-serif;
   font-size: 1rem;
   font-weight: 900;
   margin: 0 1.5rem;
   padding: 1rem 0;
+  position: relative;
   text-decoration: none;
   text-transform: uppercase;
-  transition: border-bottom 150ms;
 }
 
-a:hover {
-  border-bottom-color: black;
+a::after {
+  background-color: var(--black);
+  border-radius: 4rem;
+  bottom: 0;
+  content: "";
+  height: 0.25rem;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  transition-duration: 500ms;
+  transition-property: width, opacity;
+  transition-timing-function: cubic-bezier(0, 0.75, 0.25, 1);
+  width: 0;
+}
+
+a:hover::after {
+  opacity: 1;
+  width: 100%;
 }
 
 #phone-container {
@@ -49,8 +65,11 @@ a:hover {
   background-color: transparent;
   border: 0.25rem solid var(--black);
   border-radius: 4rem;
+  color: var(--black);
   cursor: pointer;
   display: grid;
+  font-family: Noto Sans JP, sans-serif;
+  font-weight: bold;
   grid-column: 1 / 1;
   grid-column-gap: 0.5rem;
   grid-row: 1 / 1;
@@ -58,41 +77,45 @@ a:hover {
   justify-items: center;
   padding: 0.25rem 1rem;
   position: relative;
+  text-transform: uppercase;
+  transition-duration: 1s, 125ms, 125ms;
+  transition-property: transform, background, color;
+  transition-timing-function: cubic-bezier(0, 0.75, 0.25, 1), linear, linear;
 }
 
 #phone-btn:focus {
   outline: none;
 }
 
+#phone-btn:hover {
+  background-color: var(--black);
+  color: white;
+  transform: scale(1.03);
+}
+
 #phone-btn:active {
-  transform: translate(0.1rem, 0.1rem);
+  transform: scale(1);
+  transition-duration: 0ms;
 }
 
-#phone-btn::before {
-  border: 0.15rem solid var(--black);
+#phone-btn::after {
+  border: 0.15rem solid white;
   border-radius: 4rem;
+  bottom: 0;
   content: "";
-  height: 100%;
-  opacity: 0.75;
+  left: 0;
   position: absolute;
-  width: 100%;
+  right: 0;
+  top: 0;
 }
 
-#phone-btn:hover::before {
-  animation: riple-out 750ms forwards cubic-bezier(0, 0.5, 0.5, 1);
+#phone-icon {
+  height: 1.5rem;
+  width: 1.5rem;
 }
 
 #phone-btn:hover #phone-icon {
-  animation: shake 75ms infinite linear alternate;
-}
-
-#phone-title,
-#phone-subtitle,
-#phone-number {
-  color: var(--black);
-  font-family: Noto Sans JP, sans-serif;
-  font-weight: bold;
-  text-transform: uppercase;
+  animation: shake 75ms 7 linear alternate;
 }
 
 #phone-title {
@@ -110,18 +133,11 @@ a:hover {
   font-size: 1.5rem;
 }
 
-@keyframes riple-out {
-  to {
-    opacity: 0;
-    padding: 0.75rem 1rem;
-  }
-}
-
 @keyframes shake {
   from {
-    transform: rotateZ(-7deg);
+    transform: rotateZ(-10deg);
   }
   to {
-    transform: rotateZ(7deg);
+    transform: rotateZ(10deg);
   }
 }
