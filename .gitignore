@@ -4,9 +4,10 @@
 node_modules/
 
 # production
-lib/
+dist/
 
 # misc
+.cache/
 .DS_Store
 
 npm-debug.log*

@@ -30,7 +30,6 @@ export class Button extends HTMLButtonElement {
   public constructor() {
     super();
 
-    console.log("COUCOU");
     this._togglable = this.hasAttribute("togglable");
     this._active = this.hasAttribute("active");
 
