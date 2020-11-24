@@ -1,3 +1,127 @@
 :host {
-  background-color: blue;
+  background-color: white;
+  display: grid;
+  height: 8rem;
+}
+
+ats-container {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: min-content minmax(0, 1fr) max-content;
+  padding: 1rem 0;
+}
+
+img {
+  height: 100%;
+}
+
+nav {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  border-bottom: 3px solid transparent;
+  color: var(--black);
+  font-family: Lato, sans-serif;
+  font-size: 1rem;
+  font-weight: 900;
+  margin: 0 1.5rem;
+  padding: 1rem 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: border-bottom 150ms;
+}
+
+a:hover {
+  border-bottom-color: black;
+}
+
+#phone-container {
+  align-items: center;
+  display: grid;
+  justify-items: center;
+}
+
+#phone-btn {
+  align-items: center;
+  background-color: transparent;
+  border: 0.25rem solid var(--black);
+  border-radius: 4rem;
+  cursor: pointer;
+  display: grid;
+  grid-column: 1 / 1;
+  grid-column-gap: 0.5rem;
+  grid-row: 1 / 1;
+  grid-template-columns: 2rem auto minmax(0, 1fr);
+  justify-items: center;
+  padding: 0.25rem 1rem;
+  position: relative;
+}
+
+#phone-btn:focus {
+  outline: none;
+}
+
+#phone-btn:active {
+  transform: translate(0.1rem, 0.1rem);
+}
+
+#phone-btn::before {
+  border: 0.15rem solid var(--black);
+  border-radius: 4rem;
+  content: "";
+  height: 100%;
+  opacity: 0.75;
+  position: absolute;
+  width: 100%;
+}
+
+#phone-btn:hover::before {
+  animation: riple-out 750ms forwards cubic-bezier(0, 0.5, 0.5, 1);
+}
+
+#phone-btn:hover #phone-icon {
+  animation: shake 75ms infinite linear alternate;
+}
+
+#phone-title,
+#phone-subtitle,
+#phone-number {
+  color: var(--black);
+  font-family: Noto Sans JP, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#phone-title {
+  font-size: 0.675rem;
+}
+
+#phone-subtitle {
+  align-self: flex-end;
+  font-size: 0.625rem;
+  grid-column: 1 / 1;
+  grid-row: 1 / 1;
+}
+
+#phone-number {
+  font-size: 1.5rem;
+}
+
+@keyframes riple-out {
+  to {
+    opacity: 0;
+    padding: 0.75rem 1rem;
+  }
+}
+
+@keyframes shake {
+  from {
+    transform: rotateZ(-7deg);
+  }
+  to {
+    transform: rotateZ(7deg);
+  }
 }

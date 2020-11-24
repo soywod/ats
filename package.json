@@ -38,6 +38,6 @@
   "scripts": {
     "start": "parcel serve -p 3000 src/home/index.html src/equipment/index.html src/contact/index.html",
     "build": "parcel build src/home/index.html src/equipment/index.html src/contact/index.html",
-    "postbuild": "tsc --no-emit"
+    "postbuild": "tsc --noEmit"
   }
 }
