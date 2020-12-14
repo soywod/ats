@@ -22,29 +22,29 @@
 }
 
 :host([sticky]) {
-  background-color: white;
+  background-color: var(--white);
 }
 
 :host([sticky]) a {
-  color: var(--black);
+  color: var(--black-22);
 }
 
 :host([sticky]) a::after {
-  background-color: var(--black);
+  background-color: var(--black-22);
 }
 
 :host([sticky]) #phone-btn {
-  border: 0.25rem solid var(--black);
-  color: var(--black);
+  border: 0.25rem solid var(--black-22);
+  color: var(--black-22);
 }
 
 :host([sticky]) #phone-btn:hover {
-  background-color: var(--black);
-  color: white;
+  background-color: var(--black-22);
+  color: var(--white);
 }
 
 :host([sticky]) #phone-subtitle {
-  color: var(--black);
+  color: var(--black-22);
 }
 
 ats-container {
@@ -65,7 +65,7 @@ nav {
 }
 
 a {
-  color: white;
+  color: var(--white);
   font-family: Lato, sans-serif;
   font-size: 1rem;
   font-weight: 900;
@@ -78,7 +78,7 @@ a {
 }
 
 a::after {
-  background-color: white;
+  background-color: var(--white);
   border-radius: 4rem;
   bottom: 0;
   content: "";
@@ -107,9 +107,9 @@ a:hover::after {
 #phone-btn {
   align-items: center;
   background-color: transparent;
-  border: 0.25rem solid white;
+  border: 0.25rem solid var(--white);
   border-radius: 4rem;
-  color: white;
+  color: var(--white);
   cursor: pointer;
   display: grid;
   font-family: Noto Sans JP, sans-serif;
@@ -132,7 +132,7 @@ a:hover::after {
 }
 
 #phone-btn:hover {
-  background-color: white;
+  background-color: var(--white);
   color: var(--black);
   transform: scale(1.03);
 }
@@ -157,7 +157,7 @@ a:hover::after {
 
 #phone-subtitle {
   align-self: flex-end;
-  color: white;
+  color: var(--white);
   font-size: 0.625rem;
   grid-column: 1 / 1;
   grid-row: 1 / 1;
