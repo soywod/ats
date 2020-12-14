@@ -84,9 +84,22 @@ body {
   border: none;
   border-radius: 1.5rem;
   color: var(--white);
+  cursor: pointer;
+  display: inline-flex;
   font-family: var(--font-family-alt);
   font-size: 1.5rem;
   font-weight: 900;
-  padding: 1rem 4rem;
+  justify-content: center;
+  padding: 0.8rem 4rem;
   text-transform: uppercase;
+}
+
+.section-4-btn:focus {
+  outline: none;
+}
+
+.section-4-btn-icon {
+  height: 2rem;
+  margin-right: 1rem;
+  width: 2rem;
 }
