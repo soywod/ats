@@ -1,0 +1,6 @@
+:host {
+  grid-column: 1;
+  grid-row: 1;
+  transition: 500ms transform cubic-bezier(0.9, 0, 0.1, 1);
+  width: 100%;
+}
