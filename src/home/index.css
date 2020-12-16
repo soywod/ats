@@ -1,5 +1,5 @@
 :root {
-  --white: #ffffff;
+  --white-ff: #ffffff;
   --black-22: #222222;
   --gray-cc: #cccccc;
   --yellow-d8: #d8b520;
@@ -54,6 +54,24 @@ body {
   margin: 0;
 }
 
+.section-3-title {
+  font-size: 3rem;
+  margin: 3rem 0 1rem 0;
+  text-align: center;
+}
+
+.section-3-title strong {
+  color: var(--yellow-d8);
+}
+
+.section-3-slide {
+  padding: 0 0.5rem;
+}
+
+.section-3-carousel {
+  margin-bottom: 6rem;
+}
+
 .section-4 {
   align-items: flex-end;
   display: grid;
@@ -73,7 +91,7 @@ body {
 }
 
 .section-4-title {
-  color: var(--white);
+  color: var(--white-ff);
   font-size: 3rem;
   line-height: 1.25;
   margin: 0 0 1rem 0;
@@ -83,7 +101,7 @@ body {
   background-color: var(--yellow-d8);
   border: none;
   border-radius: 1.5rem;
-  color: var(--white);
+  color: var(--white-ff);
   cursor: pointer;
   display: inline-flex;
   font-family: var(--font-family-alt);

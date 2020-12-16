@@ -14,8 +14,13 @@ export class ATSCarousel extends HTMLElement {
   public constructor() {
     super();
     this.attachShadow({mode: "open"}).append(parseStyle(style), parseTpl(tpl));
+
     this.prevBtn = findOrFail(this.shadowRoot, HTMLButtonElement, "prev");
+    this.prevBtn.style.visibility = "hidden";
+
     this.nextBtn = findOrFail(this.shadowRoot, HTMLButtonElement, "next");
+    this.nextBtn.style.visibility = "hidden";
+
     this.querySelectorAll("ats-carousel-item").forEach(item => {
       if (item instanceof HTMLElement) {
         this.items.push(item);
@@ -31,10 +36,14 @@ export class ATSCarousel extends HTMLElement {
   private updateItemsPosition = () => {
     const shift = this.items.slice(0, this.activeItemIndex).reduce((trans, item) => trans + item.clientWidth, 0);
 
+    this.prevBtn.style.visibility = this.activeItemIndex === 0 ? "hidden" : "visible";
+    this.nextBtn.style.visibility = this.activeItemIndex === this.items.length - 1 ? "hidden" : "visible";
+
     this.items.reduce((trans, item, index) => {
       item.style.transform = `translateX(${trans - shift}px)`;
       item.style.zIndex = index === this.activeItemIndex ? "1" : "inherit";
-      return trans + item.clientWidth + 16;
+
+      return trans + item.clientWidth;
     }, 0);
   };
 
