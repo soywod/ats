@@ -203,3 +203,18 @@ body {
   position: absolute;
   right: -2rem;
 }
+
+#section-8 {
+  color: var(--black-22);
+  padding: 6rem 0;
+}
+
+#section-8-title {
+  font-size: 3rem;
+  margin: 0 0 2rem 0;
+}
+
+.section-8-paragraph {
+  font-weight: 500;
+  margin: 0 0 1rem 0;
+}
