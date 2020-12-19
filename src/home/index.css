@@ -218,3 +218,33 @@ body {
   font-weight: 500;
   margin: 0 0 1rem 0;
 }
+
+#section-9 {
+  background-color: var(--gray-f4);
+  padding: 4rem 0;
+}
+
+#section-9-title {
+  margin-top: 0;
+}
+
+#section-9-image {
+  height: 12rem;
+}
+
+#section-9-grid {
+  color: var(--black-22);
+  display: grid;
+  grid-auto-flow: column;
+  grid-column-gap: 3rem;
+  grid-row-gap: 1rem;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-rows: 12rem min-content;
+  justify-items: center;
+  text-align: center;
+}
+
+#section-9-button {
+  padding: 1rem 0 5rem 0;
+  text-align: center;
+}
