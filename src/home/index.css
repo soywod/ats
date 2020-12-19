@@ -83,14 +83,14 @@ body {
   justify-items: center;
 }
 
-#section-2-img {
+#section-2-image {
   grid-column: 1;
   grid-row: 1;
   height: 200px;
   width: 200px;
 }
 
-#section-2-img-alt {
+#section-2-image-alt {
   font-size: 1.5rem;
   grid-column: 1;
   grid-row: 2;
@@ -164,6 +164,42 @@ body {
 }
 
 #section-6-button {
-  margin-top: 1.5rem;
+  margin: 1.5rem 0 6rem 0;
   text-align: center;
+}
+
+#section-7 {
+  align-items: center;
+  display: grid;
+  justify-items: center;
+}
+
+#section-7 > * {
+  color: var(--white-ff);
+  font-size: 3rem;
+  grid-column: 1;
+  grid-row: 1;
+}
+
+#section-7-title {
+  line-height: 1.2;
+  position: relative;
+}
+
+#section-7-title::before {
+  color: var(--white-ff);
+  content: "“";
+  font-size: 4rem;
+  left: -2rem;
+  position: absolute;
+  top: -2rem;
+}
+
+#section-7-title::after {
+  bottom: -1rem;
+  color: var(--white-ff);
+  content: "“";
+  font-size: 4rem;
+  position: absolute;
+  right: -2rem;
 }
