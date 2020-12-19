@@ -24,17 +24,23 @@ body {
   color: var(--yellow-d8);
 }
 
-.section-1-video {
+#section-1 {
+  display: block;
+  max-height: 45rem;
+  overflow-y: hidden;
+}
+
+#section-1-video {
   display: block;
 }
 
-.section-2 {
+#section-2 {
   background-color: var(--black-22);
   color: var(--gray-cc);
   padding: 3rem 0;
 }
 
-.section-2 ats-container {
+#section-2-container {
   align-items: center;
   display: grid;
   grid-auto-flow: row;
@@ -44,20 +50,20 @@ body {
   justify-items: center;
 }
 
-.section-2-img {
+#section-2-img {
   grid-column: 1;
   grid-row: 1;
   height: 200px;
   width: 200px;
 }
 
-.section-2-img-alt {
+#section-2-img-alt {
   font-size: 1.5rem;
   grid-column: 1;
   grid-row: 2;
 }
 
-.section-2-title {
+#section-2-title {
   font-size: 2rem;
   grid-column: 2;
   grid-row: 1 / span 2;
@@ -65,40 +71,40 @@ body {
   margin: 0;
 }
 
+#section-3 {
+  margin-bottom: 6rem;
+}
+
 .section-3-slide {
   padding: 0 0.5rem;
 }
 
-.section-3-carousel {
-  margin-bottom: 6rem;
-}
-
-.section-4 {
+#section-4 {
   align-items: flex-end;
   display: grid;
   justify-items: center;
 }
 
-.section-4-bg {
+#section-4-bg {
   grid-column: 1;
   grid-row: 1;
 }
 
-.section-4-content {
+#section-4-content {
   grid-column: 1;
   grid-row: 1;
   padding: 1.5rem 0;
   text-align: center;
 }
 
-.section-4-title {
+#section-4-title {
   color: var(--white-ff);
   font-size: 3rem;
   line-height: 1.25;
   margin: 0 0 1rem 0;
 }
 
-.section-4-btn {
+#section-4-btn {
   align-items: center;
   background-color: var(--yellow-d8);
   border: none;
@@ -114,22 +120,22 @@ body {
   text-transform: uppercase;
 }
 
-.section-4-btn:focus {
+#section-4-btn:focus {
   outline: none;
 }
 
-.section-4-btn-icon {
+#section-4-btn-icon {
   height: 2rem;
   margin-right: 1rem;
   width: 2rem;
 }
 
-.section-5-autoscroller {
+#section-5 {
   background-color: var(--gray-f4);
   padding: 2rem 0;
 }
 
-.section-6 {
+#section-6 {
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: repeat(2, minmax(0, 1fr));
