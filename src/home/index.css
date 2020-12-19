@@ -4,6 +4,9 @@
   --gray-cc: #cccccc;
   --gray-f4: #f4f4f4;
   --yellow-d8: #d8b520;
+  --blue-25: #253f62;
+  --red-7c: #7c210f;
+  --green-42: #427b10;
 
   --font-family: "Poppins", sans-serif;
   --font-family-alt: "Lato", sans-serif;
@@ -24,6 +27,36 @@ body {
   color: var(--yellow-d8);
 }
 
+.button {
+  align-items: center;
+  background-color: var(--yellow-d8);
+  border: none;
+  border-radius: 4rem;
+  color: var(--white-ff);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: var(--font-family-alt);
+  font-size: 1.25rem;
+  font-weight: 900;
+  justify-content: center;
+  padding: 0.6rem 2.5rem;
+  text-transform: uppercase;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button img {
+  height: 2rem;
+  margin-right: 1rem;
+  width: 2rem;
+}
+
+#section-5 {
+  background-color: var(--gray-f4);
+  padding: 6rem 0;
+}
 #section-1 {
   display: block;
   max-height: 45rem;
@@ -79,12 +112,6 @@ body {
   padding: 0 0.5rem;
 }
 
-/* .section-3-link { */
-/*   transform: translateY(3rem); */
-/*   transition-duration: 200ms; */
-/*   transition-property: background, transform; */
-/* } */
-
 .section-3-link::after {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 10%, transparent 100%);
   bottom: 0;
@@ -129,40 +156,14 @@ body {
   margin: 0 0 1rem 0;
 }
 
-#section-4-btn {
-  align-items: center;
-  background-color: var(--yellow-d8);
-  border: none;
-  border-radius: 1.25rem;
-  color: var(--white-ff);
-  cursor: pointer;
-  display: inline-flex;
-  font-family: var(--font-family-alt);
-  font-size: 1.25rem;
-  font-weight: 900;
-  justify-content: center;
-  padding: 0.6rem 2.5rem;
-  text-transform: uppercase;
-}
-
-#section-4-btn:focus {
-  outline: none;
-}
-
-#section-4-btn-icon {
-  height: 2rem;
-  margin-right: 1rem;
-  width: 2rem;
-}
-
-#section-5 {
-  background-color: var(--gray-f4);
-  padding: 2rem 0;
-}
-
 #section-6 {
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   grid-template-rows: repeat(2, minmax(0, 1fr));
+}
+
+#section-6-button {
+  margin-top: 1.5rem;
+  text-align: center;
 }
