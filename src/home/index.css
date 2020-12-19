@@ -79,6 +79,31 @@ body {
   padding: 0 0.5rem;
 }
 
+/* .section-3-link { */
+/*   transform: translateY(3rem); */
+/*   transition-duration: 200ms; */
+/*   transition-property: background, transform; */
+/* } */
+
+.section-3-link::after {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 10%, transparent 100%);
+  bottom: 0;
+  box-sizing: border-box;
+  content: "";
+  left: 0.5rem;
+  opacity: 0;
+  padding: 0 0.5rem;
+  position: absolute;
+  right: 0.5rem;
+  top: 0;
+  transition-duration: 200ms;
+  transition-property: opacity;
+}
+
+.section-3-slide:hover .section-3-link::after {
+  opacity: 1;
+}
+
 #section-4 {
   align-items: flex-end;
   display: grid;
