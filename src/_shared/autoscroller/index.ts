@@ -10,7 +10,7 @@ class ATSAutoscroller extends HTMLElement {
     const root = this.attachShadow({mode: "open"});
     root.append(parseStyle(style), parseTpl(tpl));
 
-    const scroller = findOrFail(root, HTMLDivElement, "scroller");
+    const scroller = findOrFail(root, HTMLDivElement, "slow-scroller");
     const slot = root.querySelector("slot");
     if (!slot) throw new Error("ATSAutoscroller: slot not found");
 

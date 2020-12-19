@@ -125,4 +125,5 @@ body {
 
 .section-5-autoscroller {
   background-color: var(--gray-f4);
+  padding: 2rem 0;
 }

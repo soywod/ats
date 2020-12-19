@@ -7,11 +7,22 @@
   overflow-x: hidden;
 }
 
-#scroller {
+#fast-scroller {
   animation: scroll 30s linear infinite;
+  animation-play-state: paused;
+  display: flex;
+}
+
+#fast-scroller:hover {
+  animation-play-state: running;
+}
+
+#slow-scroller {
+  animation: scroll 120s linear infinite;
   display: grid;
   grid-auto-flow: column;
   grid-column-gap: 1rem;
+  transition: animation-duration 200ms;
   width: auto;
 }
 
