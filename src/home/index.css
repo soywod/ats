@@ -127,3 +127,10 @@ body {
   background-color: var(--gray-f4);
   padding: 2rem 0;
 }
+
+.section-6 {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+}
