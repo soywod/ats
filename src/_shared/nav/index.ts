@@ -1,8 +1,8 @@
-import {parseStyle, parseTpl} from "../../_shared/dom-utils";
+import {parseStyle, parseTpl} from "../dom-utils";
 import style from "./index.css";
 import tpl from "./index.html";
 
-export class ATSNav extends HTMLElement {
+class ATSNav extends HTMLElement {
   private sticky = false;
 
   public constructor() {

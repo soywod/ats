@@ -1,0 +1,25 @@
+:host {
+  display: flex;
+}
+
+#frame {
+  display: flex;
+  overflow-x: hidden;
+}
+
+#scroller {
+  animation: scroll 30s linear infinite;
+  display: grid;
+  grid-auto-flow: column;
+  grid-column-gap: 1rem;
+  width: auto;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}

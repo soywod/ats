@@ -2,6 +2,7 @@
   --white-ff: #ffffff;
   --black-22: #222222;
   --gray-cc: #cccccc;
+  --gray-f4: #f4f4f4;
   --yellow-d8: #d8b520;
 
   --font-family: "Poppins", sans-serif;
@@ -11,6 +12,16 @@
 body {
   font-family: var(--font-family);
   margin: 0;
+}
+
+.title {
+  font-size: 3rem;
+  margin: 3rem 0 1rem 0;
+  text-align: center;
+}
+
+.title strong {
+  color: var(--yellow-d8);
 }
 
 .section-1-img {
@@ -52,16 +63,6 @@ body {
   grid-row: 1 / span 2;
   line-height: 1.25;
   margin: 0;
-}
-
-.section-3-title {
-  font-size: 3rem;
-  margin: 3rem 0 1rem 0;
-  text-align: center;
-}
-
-.section-3-title strong {
-  color: var(--yellow-d8);
 }
 
 .section-3-slide {
@@ -120,4 +121,8 @@ body {
   height: 2rem;
   margin-right: 1rem;
   width: 2rem;
+}
+
+.section-5-autoscroller {
+  background-color: var(--gray-f4);
 }

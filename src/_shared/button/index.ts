@@ -2,7 +2,7 @@ import {parseStyle, parseTpl} from "../dom-utils";
 import style from "./index.css";
 import tpl from "./index.html";
 
-export class Button extends HTMLButtonElement {
+class Button extends HTMLButtonElement {
   protected _togglable: boolean;
   protected _active: boolean;
 

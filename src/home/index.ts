@@ -1,6 +1,7 @@
 import "../_shared/container";
 import "../_shared/nav";
 import "../_shared/carousel";
+import "../_shared/autoscroller";
 
 import {parseStyle} from "../_shared/dom-utils";
 import style from "./index.css";

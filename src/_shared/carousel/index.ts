@@ -4,7 +4,7 @@ import tpl from "./index.html";
 
 import "./item";
 
-export class ATSCarousel extends HTMLElement {
+class ATSCarousel extends HTMLElement {
   private activeItemIndex = 0;
   private resizeTimeout = 0;
   private items: HTMLElement[] = [];
