@@ -34,20 +34,6 @@
   background-color: var(--black-22);
 }
 
-:host([sticky]) #phone-btn {
-  border: 0.25rem solid var(--black-22);
-  color: var(--black-22);
-}
-
-:host([sticky]) #phone-btn:hover {
-  background-color: var(--black-22);
-  color: var(--white-ff);
-}
-
-:host([sticky]) #phone-subtitle {
-  color: var(--black-22);
-}
-
 ats-container {
   box-sizing: border-box;
   display: grid;
@@ -97,83 +83,4 @@ a::after {
 a:hover::after {
   opacity: 1;
   width: 100%;
-}
-
-#phone-container {
-  align-items: center;
-  display: grid;
-  justify-items: center;
-}
-
-#phone-btn {
-  align-items: center;
-  background-color: transparent;
-  border: 0.25rem solid var(--white-ff);
-  border-radius: 4rem;
-  color: var(--white-ff);
-  cursor: pointer;
-  display: grid;
-  font-family: Noto Sans JP, sans-serif;
-  font-weight: bold;
-  grid-column: 1 / 1;
-  grid-column-gap: 0.5rem;
-  grid-row: 1 / 1;
-  grid-template-columns: 2rem auto minmax(0, 1fr);
-  justify-items: center;
-  padding: 0.25rem 1rem;
-  position: relative;
-  text-transform: uppercase;
-  transition-duration: 1s, 150ms, 150ms, 150ms;
-  transition-property: transform, background, color, border;
-  transition-timing-function: cubic-bezier(0, 0.75, 0.25, 1), linear, linear, linear;
-}
-
-#phone-btn:focus {
-  outline: none;
-}
-
-#phone-btn:hover {
-  background-color: var(--white-ff);
-  color: var(--black);
-  transform: scale(1.03);
-}
-
-#phone-btn:active {
-  transform: scale(1);
-  transition-duration: 0ms;
-}
-
-#phone-icon {
-  height: 1.5rem;
-  width: 1.5rem;
-}
-
-#phone-btn:hover #phone-icon {
-  animation: shake 75ms 7 linear alternate;
-}
-
-#phone-title {
-  font-size: 0.675rem;
-}
-
-#phone-subtitle {
-  align-self: flex-end;
-  color: var(--white-ff);
-  font-size: 0.625rem;
-  grid-column: 1 / 1;
-  grid-row: 1 / 1;
-  transition: color 150ms linear;
-}
-
-#phone-number {
-  font-size: 1.5rem;
-}
-
-@keyframes shake {
-  from {
-    transform: rotateZ(-10deg);
-  }
-  to {
-    transform: rotateZ(10deg);
-  }
 }

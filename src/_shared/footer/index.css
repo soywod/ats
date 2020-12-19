@@ -1,0 +1,26 @@
+:host {
+  background-color: var(--black-22);
+  color: var(--white-ff);
+  display: block;
+  padding: 6rem 0 18rem 0;
+}
+
+ats-container {
+  display: grid;
+  grid-auto-columns: minmax(0, 1fr);
+  grid-auto-flow: column;
+  justify-items: center;
+}
+
+#logo {
+  width: 14rem;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+#right {
+  text-align: right;
+}
