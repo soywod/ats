@@ -66,9 +66,9 @@
         <button class="button section-3-button">Découvrir</button>
       </div>
     </ats-carousel>
-    <section id="section-4">
+    <ats-frame id="section-4">
       <img id="section-4-bg" src="./section-4-bg.jpeg" alt="" width="100%" />
-      <div id="section-4-content">
+      <div id="section-4-content" slot="animated-content">
         <h3 id="section-4-title">
           ATS AGENCE, c’est avant tous des expert(e)s <br />
           qui vous conseillent et vous accompagnent
@@ -78,7 +78,7 @@
           Nous contacter ?
         </button>
       </div>
-    </section>
+    </ats-frame>
     <h3 class="title">Nos <strong>Marques</strong></h3>
     <ats-autoscroller id="section-5">
       <ats-autoscroller-item>
@@ -132,7 +132,9 @@
       </button>
     </div>
     <ats-frame id="section-7">
-      <h3 id="section-7-title">Il n'y a pas de mauvais ouvriers,<br />juste de mauvais équipements</h3>
+      <h3 slot="animated-content" id="section-7-title">
+        Il n'y a pas de mauvais ouvriers,<br />juste de mauvais équipements
+      </h3>
     </ats-frame>
     <section id="section-8">
       <ats-container>

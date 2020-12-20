@@ -163,6 +163,7 @@ body {
 
 #section-4 {
   align-items: flex-end;
+  background-color: var(--white-ff);
   display: grid;
   justify-items: center;
   position: relative;
@@ -182,7 +183,7 @@ body {
 
 #section-4-title {
   color: var(--white-ff);
-  font-size: 3rem;
+  font-size: 2.5rem;
   line-height: 1.25;
   margin: 0 0 1rem 0;
 }
@@ -213,8 +214,6 @@ body {
 
 #section-7 {
   align-items: center;
-  border: 20rem solid var(--white-ff);
-  border-top: none;
   display: grid;
   justify-items: center;
   position: relative;

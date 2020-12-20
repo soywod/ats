@@ -1,8 +1,10 @@
 :host {
+  border: 20rem solid var(--white-ff);
+  border-top: none;
   display: block;
 }
 
-#content {
+[name="animated-content"]::slotted(*) {
   opacity: 0;
   transform: translateY(5rem);
   transition-duration: 500ms;
