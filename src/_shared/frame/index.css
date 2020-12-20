@@ -1,93 +1,11 @@
 :host {
-  align-items: center;
-  display: grid;
-  justify-items: center;
-  min-height: 6rem;
+  display: block;
 }
 
-:host([theme="light"]) #button {
-  border: 0.25rem solid var(--black-22);
-  color: var(--black-22);
-}
-
-:host([theme="light"]) #button:hover {
-  background-color: var(--black-22);
-  color: var(--white-ff);
-}
-
-:host([theme="light"]) #mention {
-  color: var(--black-22);
-}
-
-#button {
-  align-items: center;
-  background-color: transparent;
-  border: 0.25rem solid var(--white-ff);
-  border-radius: 4rem;
-  color: var(--white-ff);
-  cursor: pointer;
-  display: grid;
-  font-family: Noto Sans JP, sans-serif;
-  font-weight: bold;
-  grid-column: 1 / 1;
-  grid-column-gap: 0.5rem;
-  grid-row: 1 / 1;
-  grid-template-columns: 2rem auto minmax(0, 1fr);
-  justify-items: center;
-  padding: 0.25rem 1rem;
-  position: relative;
-  text-transform: uppercase;
-  transition-duration: 1s, 150ms, 150ms, 150ms;
-  transition-property: transform, background, color, border;
-  transition-timing-function: cubic-bezier(0, 0.75, 0.25, 1), linear, linear, linear;
-}
-
-#button:focus {
-  outline: none;
-}
-
-#button:hover {
-  background-color: var(--white-ff);
-  color: var(--black-22);
-  transform: scale(1.03);
-}
-
-#button:active {
-  transform: scale(1);
-  transition-duration: 0ms;
-}
-
-#icon {
-  height: 1.5rem;
-  width: 1.5rem;
-}
-
-#button:hover #icon {
-  animation: shake 75ms 7 linear alternate;
-}
-
-#label {
-  font-size: 0.675rem;
-}
-
-#phone-number {
-  font-size: 1.5rem;
-}
-
-#mention {
-  align-self: flex-end;
-  color: var(--white-ff);
-  font-size: 0.625rem;
-  grid-column: 1 / 1;
-  grid-row: 1 / 1;
-  transition: color 150ms linear;
-}
-
-@keyframes shake {
-  from {
-    transform: rotateZ(-10deg);
-  }
-  to {
-    transform: rotateZ(10deg);
-  }
+#content {
+  opacity: 0;
+  transform: translateY(5rem);
+  transition-duration: 500ms;
+  transition-property: opacity transform;
+  transition-timing-function: ease-out;
 }

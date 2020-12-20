@@ -213,7 +213,8 @@ body {
 
 #section-7 {
   align-items: center;
-  border: 3rem solid var(--white-ff);
+  border: 20rem solid var(--white-ff);
+  border-top: none;
   display: grid;
   justify-items: center;
   position: relative;
@@ -228,7 +229,7 @@ body {
 
 #section-7-title {
   line-height: 1.2;
-  margin: 25rem 0;
+  margin: 20rem 0;
   position: relative;
 }
 

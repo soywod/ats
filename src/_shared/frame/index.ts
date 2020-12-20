@@ -1,21 +1,34 @@
-import {parseStyle, parseTpl} from "../dom-utils";
+import {parseStyle, parseTpl, findOrFail} from "../dom-utils";
 import style from "./index.css";
 import tpl from "./index.html";
 
 export class ATSFrame extends HTMLElement {
   private intersection$: IntersectionObserver;
   private isIntersecting = false;
+  private content: HTMLDivElement;
 
   public constructor() {
     super();
-    this.attachShadow({mode: "open"}).append(parseStyle(style), parseTpl(tpl));
+    const root = this.attachShadow({mode: "open"});
+    root.append(parseStyle(style), parseTpl(tpl));
+    this.content = findOrFail(root, HTMLDivElement, "content");
     this.intersection$ = new IntersectionObserver(
       entries => {
         entries.forEach(entry => {
           this.isIntersecting = entry.isIntersecting;
+
+          if (entry.isIntersecting) {
+            if (entry.intersectionRatio > 0.75) {
+              this.content.style.opacity = "1";
+              this.content.style.transform = "translateY(0)";
+            } else {
+              this.content.style.opacity = "0";
+              this.content.style.transform = "translateY(5rem)";
+            }
+          }
         });
       },
-      {threshold: 0.2},
+      {threshold: [0, 0.75]},
     );
   }
 
@@ -24,8 +37,7 @@ export class ATSFrame extends HTMLElement {
       const nav = document.querySelector("ats-nav");
       const navHeight = nav ? nav.clientHeight : 128;
       const offsetTop = this.offsetTop - navHeight - 16;
-      const borderWidth = Math.trunc(Math.max(0, (offsetTop * 100) / window.scrollY - 100) * 3);
-      console.log(borderWidth);
+      const borderWidth = Math.trunc(Math.max(0, (offsetTop * 100) / window.scrollY - 100) * 30);
       this.style.borderWidth = `${borderWidth}px`;
     }
   };
