@@ -2,6 +2,7 @@ import "../_shared/container";
 import "../_shared/nav";
 import "../_shared/carousel";
 import "../_shared/autoscroller";
+import "../_shared/img";
 import "../_shared/frame";
 import "../_shared/footer";
 
