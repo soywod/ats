@@ -27,12 +27,26 @@ class ATSNav extends HTMLElement {
     }
   };
 
+  private setButtonThemeLight = () => {
+    this.button.setAttribute("theme", "light");
+  };
+
+  private setButtonThemeDark = () => {
+    if (!this.sticky) {
+      this.button.setAttribute("theme", "dark");
+    }
+  };
+
   protected connectedCallback() {
     window.addEventListener("scroll", this.handleScroll);
+    this.addEventListener("mouseenter", this.setButtonThemeLight);
+    this.addEventListener("mouseleave", this.setButtonThemeDark);
   }
 
   protected disconnectedCallback() {
     window.removeEventListener("scroll", this.handleScroll);
+    this.removeEventListener("mouseenter", this.setButtonThemeLight);
+    this.removeEventListener("mouseleave", this.setButtonThemeDark);
   }
 }
 

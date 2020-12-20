@@ -14,23 +14,28 @@
   display: none;
 }
 
-:host([sticky]) img[data-theme="dark"] {
+:host([sticky]) img[data-theme="dark"],
+:host(:hover) img[data-theme="dark"] {
   display: block;
 }
 
-:host([sticky]) img[data-theme="light"] {
+:host([sticky]) img[data-theme="light"],
+:host(:hover) img[data-theme="light"] {
   display: none;
 }
 
-:host([sticky]) {
+:host([sticky]),
+:host(:hover) {
   background-color: var(--white-ff);
 }
 
-:host([sticky]) a {
+:host([sticky]) a,
+:host(:hover) a {
   color: var(--black-22);
 }
 
-:host([sticky]) a::after {
+:host([sticky]) a::after,
+:host(:hover) a::after {
   background-color: var(--black-22);
 }
 
