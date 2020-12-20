@@ -1,5 +1,5 @@
 :host {
-  border: 20rem solid var(--white-ff);
+  border: 0 solid var(--white-ff);
   border-top: none;
   display: block;
 }

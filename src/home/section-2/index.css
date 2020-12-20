@@ -1,0 +1,48 @@
+:host {
+  background-color: var(--black-22);
+  color: var(--gray-cc);
+  display: block;
+  padding: 3rem 0;
+  position: relative;
+}
+
+#container {
+  align-items: center;
+  display: grid;
+  grid-auto-flow: row;
+  grid-row-gap: 0.5rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-rows: minmax(0, 1fr) min-content;
+  justify-items: center;
+}
+
+@keyframes spin {
+  from {
+    transform: rotateY(90deg);
+  }
+  to {
+    transform: rotateY(-90deg);
+  }
+}
+
+#image {
+  animation: spin cubic-bezier(0, 0.8, 1, 0.2) 4s infinite;
+  grid-column: 1;
+  grid-row: 1;
+  height: 200px;
+  width: 200px;
+}
+
+#alt {
+  font-size: 1.5rem;
+  grid-column: 1;
+  grid-row: 2;
+}
+
+#title {
+  font-size: 2rem;
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  line-height: 1.25;
+  margin: 0;
+}

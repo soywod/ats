@@ -5,6 +5,8 @@ import "../_shared/autoscroller";
 import "../_shared/frame";
 import "../_shared/footer";
 
+import "./section-2";
+
 import {parseStyle} from "../_shared/dom-utils";
 import style from "./index.css";
 
