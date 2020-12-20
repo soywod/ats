@@ -252,10 +252,10 @@ body {
 }
 
 #section-9-title {
-  margin-top: 0;
+  margin: 0 0 3rem 0;
 }
 
-#section-9-image {
+.section-9-image {
   height: 12rem;
 }
 
