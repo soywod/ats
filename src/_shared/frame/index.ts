@@ -10,22 +10,24 @@ export class ATSFrame extends HTMLElement {
   private intersection$: IntersectionObserver;
   private isIntersecting = false;
   private content: HTMLSlotElement;
+  private threshold: number;
 
   public constructor() {
     super();
     const root = this.attachShadow({mode: "open"});
     root.append(parseStyle(style), parseTpl(tpl));
     this.content = findFirstOrFail(root, HTMLSlotElement, "slot[name='animated-content']");
+    this.threshold = parseFloat(this.getAttribute("threshold") || "0.75");
 
     this.intersection$ = new IntersectionObserver(
       entries => {
         entries.forEach(entry => {
           this.isIntersecting = entry.isIntersecting;
 
-          if (entry.isIntersecting) {
+          if (entry.isIntersecting && entry.intersectionRect.top > 0) {
             this.content.assignedElements().forEach(elem => {
               if (elem instanceof HTMLElement) {
-                if (entry.intersectionRatio > 0.75) {
+                if (entry.intersectionRatio >= this.threshold) {
                   elem.style.opacity = "1";
                   elem.style.transform = "translateY(0)";
                 } else {
@@ -37,7 +39,7 @@ export class ATSFrame extends HTMLElement {
           }
         });
       },
-      {threshold: [0, 0.75]},
+      {threshold: [0, this.threshold]},
     );
   }
 
@@ -45,7 +47,7 @@ export class ATSFrame extends HTMLElement {
     if (this.isIntersecting) {
       const borderWidthMax = 400;
       const offsetTop = this.offsetTop - window.innerHeight;
-      const ratio = (this.clientHeight * 0.75) / borderWidthMax;
+      const ratio = (this.clientHeight * this.threshold) / borderWidthMax;
       const borderWidth = borderWidthMax - (window.scrollY - offsetTop) / ratio;
       this.style.borderWidth = `${clamp(0, borderWidthMax, borderWidth)}px`;
     }
