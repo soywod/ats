@@ -25,3 +25,24 @@ ats-container {
 #right {
   text-align: right;
 }
+
+#signature {
+  background-color: var(--black-00);
+  bottom: 0;
+  color: var(--gray-66);
+  font-size: 0.8rem;
+  left: 0;
+  padding: 0.5rem 0;
+  position: absolute;
+  right: 0;
+  text-align: right;
+}
+
+#signature a {
+  color: var(--gray-66);
+  transition: color 125ms;
+}
+
+#signature a:hover {
+  color: var(--white-ff);
+}
