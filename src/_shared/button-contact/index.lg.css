@@ -1,0 +1,9 @@
+@media screen and (max-width: 100em) {
+  #button {
+    padding: 0.2rem 0.75rem;
+  }
+
+  #phone-number {
+    font-size: 1.25rem;
+  }
+}

@@ -1,4 +1,4 @@
-import {parseStyle, parseTpl, findOrFail} from "../../_shared/dom-utils";
+import {cssOfStr, tplOfStr, findOrFail} from "../../_shared/dom-utils";
 import style from "./index.css";
 import tpl from "./index.html";
 
@@ -18,7 +18,7 @@ class ATSSection2 extends HTMLElement {
   public constructor() {
     super();
     const root = this.attachShadow({mode: "open"});
-    root.append(parseStyle(style), parseTpl(tpl));
+    root.append(cssOfStr(style), tplOfStr(tpl));
     this.img = findOrFail(root, HTMLImageElement, "image");
     this.alt = findOrFail(root, HTMLSpanElement, "alt");
   }

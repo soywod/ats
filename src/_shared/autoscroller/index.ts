@@ -1,4 +1,4 @@
-import {parseStyle, parseTpl, findOrFail} from "../dom-utils";
+import {cssOfStr, tplOfStr, findOrFail} from "../dom-utils";
 import style from "./index.css";
 import tpl from "./index.html";
 
@@ -8,7 +8,7 @@ class ATSAutoscroller extends HTMLElement {
   public constructor() {
     super();
     const root = this.attachShadow({mode: "open"});
-    root.append(parseStyle(style), parseTpl(tpl));
+    root.append(cssOfStr(style), tplOfStr(tpl));
 
     const scroller = findOrFail(root, HTMLDivElement, "slow-scroller");
     const slot = root.querySelector("slot");

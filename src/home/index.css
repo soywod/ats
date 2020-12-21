@@ -10,6 +10,11 @@
 
   --font-family: "Poppins", sans-serif;
   --font-family-alt: "Lato", sans-serif;
+
+  --media-lg: 100em;
+  --media-md: 72em;
+  --media-sm: 56em;
+  --media-xs: 31em;
 }
 
 body {

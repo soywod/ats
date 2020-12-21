@@ -8,7 +8,7 @@ import "../_shared/footer";
 
 import "./section-2";
 
-import {parseStyle} from "../_shared/dom-utils";
+import {cssOfStr} from "../_shared/dom-utils";
 import style from "./index.css";
 
-document.head.append(parseStyle(style));
+document.head.append(cssOfStr(style));

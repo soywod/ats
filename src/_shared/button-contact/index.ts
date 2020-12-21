@@ -1,11 +1,12 @@
-import {parseStyle, parseTpl} from "../dom-utils";
-import style from "./index.css";
+import {cssOfStr, tplOfStr} from "../dom-utils";
+import css from "./index.css";
+import cssLg from "./index.lg.css";
 import tpl from "./index.html";
 
 export class ATSButtonContact extends HTMLElement {
   public constructor() {
     super();
-    this.attachShadow({mode: "open"}).append(parseStyle(style), parseTpl(tpl));
+    this.attachShadow({mode: "open"}).append(cssOfStr(css), cssOfStr(cssLg), tplOfStr(tpl));
   }
 }
 

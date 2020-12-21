@@ -3,13 +3,13 @@ function typeGuard<T>(o: any, className: Constructor<T>): o is T {
   return o instanceof className;
 }
 
-export function parseStyle(str: string) {
+export function cssOfStr(str: string) {
   const wrapper = document.createElement("style");
   wrapper.innerHTML = str;
   return wrapper;
 }
 
-export function parseTpl(str: string) {
+export function tplOfStr(str: string) {
   const wrapper = document.createElement("template");
   wrapper.innerHTML = str;
   return wrapper.content;
@@ -76,11 +76,7 @@ export function isValidatable(instance: any): instance is Validatable {
   return "validate" in instance && typeof instance.validate === "function";
 }
 
-export function transferAttrs(
-  source: HTMLElement,
-  target: HTMLElement,
-  exceptions = ["id", "type", "part"],
-) {
+export function transferAttrs(source: HTMLElement, target: HTMLElement, exceptions = ["id", "type", "part"]) {
   Array.from(source.attributes).forEach(attr => {
     if (!exceptions.includes(attr.name)) {
       target.setAttribute(attr.name, attr.value);

@@ -1,4 +1,4 @@
-import {parseStyle, parseTpl} from "../dom-utils";
+import {cssOfStr, tplOfStr} from "../dom-utils";
 import style from "./index.css";
 import tpl from "./index.html";
 
@@ -33,7 +33,7 @@ class Button extends HTMLButtonElement {
     this._togglable = this.hasAttribute("togglable");
     this._active = this.hasAttribute("active");
 
-    this.append(parseTpl(tpl));
+    this.append(tplOfStr(tpl));
   }
 
   protected connectedCallback() {
@@ -80,4 +80,4 @@ class Button extends HTMLButtonElement {
 }
 
 customElements.define("ats-button", Button, {extends: "button"});
-customElements.whenDefined("ats-button").then(() => document.head.prepend(parseStyle(style)));
+customElements.whenDefined("ats-button").then(() => document.head.prepend(cssOfStr(style)));

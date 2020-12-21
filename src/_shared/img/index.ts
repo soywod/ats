@@ -1,4 +1,4 @@
-import {parseStyle} from "../dom-utils";
+import {cssOfStr} from "../dom-utils";
 import style from "./index.css";
 
 export class ATSImg extends HTMLImageElement {
@@ -31,4 +31,4 @@ export class ATSImg extends HTMLImageElement {
 }
 
 customElements.define("ats-img", ATSImg, {extends: "img"});
-customElements.whenDefined("ats-img").then(() => document.head.append(parseStyle(style)));
+customElements.whenDefined("ats-img").then(() => document.head.append(cssOfStr(style)));
