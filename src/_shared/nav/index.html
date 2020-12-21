@@ -1,12 +1,12 @@
 <ats-container>
-  <img src="../logo-dark.svg" alt="ATS agence logo" data-theme="dark" />
-  <img src="../logo-light.svg" alt="ATS agence logo" data-theme="light" />
+  <img class="logo" src="../logo-dark.svg" alt="ATS agence logo" data-theme="dark" />
+  <img class="logo" src="../logo-light.svg" alt="ATS agence logo" data-theme="light" />
   <nav>
     <a href="/home/index.html">
       Tout savoir <br />
       sur nous …
     </a>
-    <a href="/equipment/index.html">
+    <a id="subnav-btn" href="/equipment/index.html">
       Équipements <br />
       par métiers
     </a>
@@ -17,3 +17,15 @@
   </nav>
   <ats-button-contact id="button" theme="dark"></ats-button-contact>
 </ats-container>
+<div id="subnav" hidden>
+  <ats-container id="subnav-container">
+    <img src="./image-1.jpeg" alt="" width="100%" />
+    <span class="subnav-label">Mairies &amp; collectivités</span>
+    <img src="./image-2.jpeg" alt="" width="100%" />
+    <span class="subnav-label">Travaux publics</span>
+    <img src="./image-3.jpeg" alt="" width="100%" />
+    <span class="subnav-label">Caves &amp; coopératives</span>
+    <img src="./image-4.jpeg" alt="" width="100%" />
+    <span class="subnav-label">Industrie &amp; logistique</span>
+  </ats-container>
+</div>

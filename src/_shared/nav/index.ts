@@ -6,47 +6,59 @@ import {ATSButtonContact} from "../button-contact";
 
 class ATSNav extends HTMLElement {
   private sticky = false;
-  private button: ATSButtonContact;
+  private contactBtn: ATSButtonContact;
+  private subnavBtn: HTMLAnchorElement;
+  private subnav: HTMLDivElement;
 
   public constructor() {
     super();
     const root = this.attachShadow({mode: "open"});
     root.append(parseStyle(style), parseTpl(tpl));
-    this.button = findOrFail(root, ATSButtonContact, "button");
+    this.contactBtn = findOrFail(root, ATSButtonContact, "button");
+    this.subnavBtn = findOrFail(root, HTMLAnchorElement, "subnav-btn");
+    this.subnav = findOrFail(root, HTMLDivElement, "subnav");
   }
 
   private handleScroll = () => {
     if (window.scrollY === 0) {
       this.removeAttribute("sticky");
       this.sticky = false;
-      this.button.setAttribute("theme", "dark");
+      this.contactBtn.setAttribute("theme", "dark");
     } else if (!this.sticky) {
       this.setAttribute("sticky", "");
       this.sticky = true;
-      this.button.setAttribute("theme", "light");
+      this.contactBtn.setAttribute("theme", "light");
     }
   };
 
-  private setButtonThemeLight = () => {
-    this.button.setAttribute("theme", "light");
+  private handleMouseEnter = () => {
+    this.contactBtn.setAttribute("theme", "light");
   };
 
-  private setButtonThemeDark = () => {
+  private handleMouseLeave = () => {
     if (!this.sticky) {
-      this.button.setAttribute("theme", "dark");
+      this.contactBtn.setAttribute("theme", "dark");
     }
+
+    this.subnav.setAttribute("hidden", "");
+  };
+
+  private handleSubnavBtnMouseEnter = () => {
+    this.subnav.removeAttribute("hidden");
   };
 
   protected connectedCallback() {
     window.addEventListener("scroll", this.handleScroll);
-    this.addEventListener("mouseenter", this.setButtonThemeLight);
-    this.addEventListener("mouseleave", this.setButtonThemeDark);
+    this.addEventListener("mouseenter", this.handleMouseEnter);
+    this.addEventListener("mouseleave", this.handleMouseLeave);
+    this.subnavBtn.addEventListener("mouseenter", this.handleSubnavBtnMouseEnter);
   }
 
   protected disconnectedCallback() {
     window.removeEventListener("scroll", this.handleScroll);
-    this.removeEventListener("mouseenter", this.setButtonThemeLight);
-    this.removeEventListener("mouseleave", this.setButtonThemeDark);
+    this.removeEventListener("mouseenter", this.handleMouseEnter);
+    this.removeEventListener("mouseleave", this.handleMouseLeave);
+    this.subnavBtn.removeEventListener("mouseenter", this.handleSubnavBtnMouseEnter);
   }
 }
 
