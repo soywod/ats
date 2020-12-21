@@ -17,10 +17,15 @@
 }
 
 @keyframes spin {
-  from {
+  0% {
+    opacity: 0;
     transform: rotateY(90deg);
   }
-  to {
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
     transform: rotateY(-90deg);
   }
 }

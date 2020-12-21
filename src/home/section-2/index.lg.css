@@ -1,0 +1,14 @@
+@media screen and (max-width: 100em) {
+  :host {
+    padding: 2.5rem;
+  }
+
+  #image {
+    height: 175px;
+    width: 175px;
+  }
+
+  #title {
+    font-size: 1.75rem;
+  }
+}

@@ -9,6 +9,7 @@ import "../_shared/footer";
 import "./section-2";
 
 import {cssOfStr} from "../_shared/dom-utils";
-import style from "./index.css";
+import css from "./index.css";
+import cssLg from "./index.lg.css";
 
-document.head.append(cssOfStr(style));
+document.head.append(cssOfStr(css), cssOfStr(cssLg));

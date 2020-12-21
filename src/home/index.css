@@ -187,13 +187,13 @@ body {
 }
 
 #section-7 > * {
-  color: var(--white-ff);
-  font-size: 3rem;
   grid-column: 1;
   grid-row: 1;
 }
 
 #section-7-title {
+  color: var(--white-ff);
+  font-size: 3rem;
   line-height: 1.2;
   margin: 20rem 0;
   position: relative;
@@ -256,6 +256,7 @@ body {
 }
 
 .section-9-image {
+  align-self: flex-end;
   height: 12rem;
 }
 
