@@ -1,3 +1,7 @@
+declare module "*.svg" {
+  export default string;
+}
+
 declare module "*.css" {
   export default string;
 }
