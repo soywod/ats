@@ -36,9 +36,9 @@
   },
   "dependencies": {},
   "scripts": {
-    "start": "parcel serve -p 3000 src/home/index.html src/equipment/index.html src/contact/index.html",
-    "prebuild": "tsc --noEmit",
-    "build": "parcel build src/home/index.html src/equipment/index.html src/contact/index.html",
+    "start": "parcel serve -p 3000 src/*/index.html",
+    "prebuild": "tsc",
+    "build": "parcel build src/*/index.html",
     "postbuild": "cp static/_redirects dist/"
   }
 }

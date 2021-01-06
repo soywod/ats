@@ -11,6 +11,7 @@
     "lib": ["dom", "dom.iterable", "esnext"],
     "module": "CommonJS",
     "moduleResolution": "Node",
+    "noEmit": true,
     "outDir": "lib",
     "resolveJsonModule": true,
     "rootDir": "./src",
