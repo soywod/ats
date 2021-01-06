@@ -177,3 +177,39 @@ body {
   max-width: 60%;
   text-transform: uppercase;
 }
+
+#section-3 {
+  background-color: var(--gray-f4);
+  margin-bottom: 3rem;
+  padding: 2rem;
+}
+
+#section-3-title {
+  color: var(--black-44);
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0 0 2rem 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#section-3-imgs {
+  display: grid;
+  grid-auto-flow: column;
+  grid-column-gap: 1rem;
+  grid-template-rows: 10rem min-content;
+  justify-items: center;
+}
+
+.section-3-img {
+  height: 10rem;
+}
+
+.section-3-label {
+  color: var(--black-44);
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: center;
+  text-transform: uppercase;
+}
