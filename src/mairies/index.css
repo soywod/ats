@@ -6,6 +6,7 @@
   --gray-cc: #cccccc;
   --gray-66: #666666;
   --gray-f4: #f4f4f4;
+  --gray-fa: #fafafa;
   --yellow-d8: #d8b520;
   --blue-25: #253f62;
   --red-7c: #7c210f;
@@ -269,4 +270,37 @@ body {
 
 #section-3-btn-phone-number {
   font-size: 1.5rem;
+}
+
+#section-4 {
+  align-items: center;
+  background-color: var(--white-ff);
+  display: grid;
+  justify-items: flex-start;
+  position: relative;
+}
+
+#section-4-bg {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+#section-4-content {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+#section-4-title {
+  color: var(--white-ff);
+  font-size: 2.5rem;
+  line-height: 1.25;
+  margin: 0 0 1rem 0;
+  max-width: 25rem;
+}
+
+#section-4-p {
+  color: var(--gray-fa);
+  font-size: 1.25rem;
+  max-width: 25rem;
+  width: 100%;
 }
