@@ -285,6 +285,11 @@ body {
   grid-row: 1;
 }
 
+.section-4-bg {
+  display: block;
+  width: 100%;
+}
+
 #section-4-content {
   grid-column: 1;
   grid-row: 1;

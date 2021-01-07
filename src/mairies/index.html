@@ -86,7 +86,20 @@
     </ats-container>
 
     <ats-frame id="section-4">
-      <img id="section-4-bg" src="./section-4.jpeg" alt="" width="100%" />
+      <ats-intersection-box-group id="section-4-bg">
+        <ats-intersection-box threshold="0">
+          <img class="section-4-bg" src="./section-4-a.jpeg" alt="" />
+        </ats-intersection-box>
+        <ats-intersection-box threshold="0.6">
+          <img class="section-4-bg" src="./section-4-b.jpeg" alt="" />
+        </ats-intersection-box>
+        <ats-intersection-box threshold="0.8">
+          <img class="section-4-bg" src="./section-4-c.jpeg" alt="" />
+        </ats-intersection-box>
+        <ats-intersection-box threshold="1">
+          <img class="section-4-bg" src="./section-4-d.jpeg" alt="" />
+        </ats-intersection-box>
+      </ats-intersection-box-group>
       <ats-container id="section-4-content" slot="animated-content">
         <h3 id="section-4-title">
           Animation sur le flocage
