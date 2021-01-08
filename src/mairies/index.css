@@ -303,6 +303,7 @@ body {
   line-height: 1.25;
   margin: 0 0 1rem 0;
   max-width: 25rem;
+  text-transform: uppercase;
 }
 
 #section-4-p {
@@ -519,6 +520,7 @@ body {
   line-height: 1.25;
   margin: 0 0 1rem 0;
   max-width: 25rem;
+  text-transform: uppercase;
 }
 
 #section-6-p {
@@ -635,4 +637,39 @@ body {
   margin: 0;
   max-width: 60%;
   text-transform: uppercase;
+}
+
+#section-8-container {
+  background-color: var(--gray-f7);
+}
+
+#section-8 {
+  align-items: center;
+  background-color: var(--gray-f7);
+  display: grid;
+  justify-items: flex-start;
+  position: relative;
+}
+
+#section-8-bg {
+  grid-column: 1;
+  grid-row: 1;
+  width: 100%;
+}
+
+#section-8-content {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+#section-8-title {
+  color: var(--white-ff);
+  font-size: 2.5rem;
+  line-height: 1.25;
+  margin: 0 0 1rem 0;
+  text-transform: uppercase;
+}
+
+#section-8-title > span {
+  margin-left: 4rem;
 }
