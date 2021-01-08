@@ -27,6 +27,7 @@
 body {
   font-family: var(--font-family);
   margin: 0;
+  overflow-x: hidden;
 }
 
 .title {
@@ -66,6 +67,30 @@ body {
   height: 2rem;
   margin-right: 1rem;
   width: 2rem;
+}
+
+#section-1 {
+  align-items: center;
+  display: grid;
+  justify-items: center;
+}
+
+#section-1 > * {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+#section-1-bg-far {
+  width: 100%;
+}
+
+#section-1-bg-close {
+  width: 100%;
+}
+
+#section-1-personnage {
+  align-self: end;
+  z-index: 1;
 }
 
 #section-2 {
