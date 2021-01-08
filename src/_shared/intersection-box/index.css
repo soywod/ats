@@ -1,9 +1,13 @@
 :host {
+  display: flex;
   grid-column: 1 / 1;
   grid-row: 1 / 1;
-  visibility: hidden;
+  opacity: 0;
+  transition-duration: 200ms;
+  transition-property: opacity;
+  transition-timing-function: linear;
 }
 
-:host([intersecting]) {
-  visibility: visible;
+:host([visible]) {
+  opacity: 1;
 }

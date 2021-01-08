@@ -476,3 +476,49 @@ body {
   display: block;
   height: 100%;
 }
+
+#section-6 {
+  align-items: center;
+  background-color: var(--white-ff);
+  display: grid;
+  justify-items: flex-start;
+  position: relative;
+}
+
+#section-6-bg {
+  grid-column: 1;
+  grid-row: 1;
+  width: 100%;
+}
+
+#section-6-img {
+  align-self: end;
+  grid-column: 1;
+  grid-row: 1;
+  justify-self: end;
+}
+
+.section-6-img {
+  height: 35rem;
+  margin-right: 6rem;
+}
+
+#section-6-content {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+#section-6-title {
+  color: var(--white-ff);
+  font-size: 2.5rem;
+  line-height: 1.25;
+  margin: 0 0 1rem 0;
+  max-width: 25rem;
+}
+
+#section-6-p {
+  color: var(--gray-fa);
+  font-size: 1.25rem;
+  max-width: 25rem;
+  width: 100%;
+}
