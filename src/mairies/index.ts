@@ -13,6 +13,8 @@ import section5bImg from "./section-5-b.jpeg";
 import section5dImg from "./section-5-d.jpeg";
 import section7cImg from "./section-7-c.jpeg";
 import section7dImg from "./section-7-d.jpeg";
+import section9bImg from "./section-9-b.jpeg";
+import section9dImg from "./section-9-d.jpeg";
 
 import {findOrFail, cssOfStr} from "../_shared/dom-utils";
 import css from "./index.css";
@@ -24,5 +26,7 @@ findOrFail(document, HTMLDivElement, "section-5-b").style.backgroundImage = `url
 findOrFail(document, HTMLDivElement, "section-5-d").style.backgroundImage = `url(${section5dImg})`;
 findOrFail(document, HTMLDivElement, "section-7-c").style.backgroundImage = `url(${section7cImg})`;
 findOrFail(document, HTMLDivElement, "section-7-d").style.backgroundImage = `url(${section7dImg})`;
+findOrFail(document, HTMLDivElement, "section-9-b").style.backgroundImage = `url(${section9bImg})`;
+findOrFail(document, HTMLDivElement, "section-9-d").style.backgroundImage = `url(${section9dImg})`;
 
 document.head.append(cssOfStr(css), cssOfStr(cssLg));
