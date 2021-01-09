@@ -1,3 +1,4 @@
+import "../_shared/anchor-header";
 import "../_shared/autoscroller";
 import "../_shared/carousel";
 import "../_shared/container";
@@ -7,6 +8,8 @@ import "../_shared/img";
 import "../_shared/intersection-box";
 import "../_shared/nav";
 import "../_shared/parallaxe-box";
+
+import smoothscroll from "smoothscroll-polyfill";
 
 import section2cImg from "./section-2-c.jpeg";
 import section2dImg from "./section-2-d.jpeg";
@@ -30,4 +33,5 @@ findOrFail(document, HTMLDivElement, "section-7-d").style.backgroundImage = `url
 findOrFail(document, HTMLDivElement, "section-9-b").style.backgroundImage = `url(${section9bImg})`;
 findOrFail(document, HTMLDivElement, "section-9-d").style.backgroundImage = `url(${section9dImg})`;
 
+smoothscroll.polyfill();
 document.head.append(cssOfStr(css), cssOfStr(cssLg));

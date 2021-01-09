@@ -19,9 +19,11 @@
     "@babel/plugin-syntax-dynamic-import": "^7.8.3",
     "@babel/preset-env": "^7.9.5",
     "@babel/preset-typescript": "^7.9.0",
+    "@types/smoothscroll-polyfill": "^0.3.1",
     "@typescript-eslint/eslint-plugin": "^2.28.0",
     "@typescript-eslint/parser": "^2.28.0",
     "babel-eslint": "^10.1.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.10.1",
     "parcel-bundler": "^1.12.4",
@@ -34,7 +36,9 @@
     "stylelint-prettier": "^1.1.1",
     "typescript": "^3.8.3"
   },
-  "dependencies": {},
+  "dependencies": {
+    "smoothscroll-polyfill": "^0.4.4"
+  },
   "scripts": {
     "start": "parcel serve -p 3000 src/*/index.html",
     "prebuild": "tsc",

@@ -1,0 +1,48 @@
+:host {
+  animation-direction: alternate;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-name: floating;
+  animation-timing-function: ease-out;
+  cursor: pointer;
+  display: inline-flex;
+  position: absolute;
+  z-index: 2;
+}
+
+:host([theme="dark"]) #label {
+  color: var(--white-ff);
+}
+
+#anchor {
+  display: inline-flex;
+  position: relative;
+}
+
+#icon {
+  height: 3rem;
+  width: 3rem;
+}
+
+#label {
+  color: var(--gray-4a);
+  cursor: pointer;
+  font-family: var(--font-family);
+  font-size: 0.9rem;
+  font-weight: bold;
+  line-height: 1.2;
+  position: absolute;
+  text-transform: uppercase;
+  word-break: keep-all;
+}
+
+@keyframes floating {
+  from {
+    opacity: 0.6;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(-0.5rem);
+  }
+}

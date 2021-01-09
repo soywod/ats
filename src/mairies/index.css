@@ -1,19 +1,20 @@
 :root {
-  --white-ff: #ffffff;
+  --black-00: #000000;
   --black-22: #222222;
   --black-44: #444444;
-  --black-00: #000000;
-  --gray-cc: #cccccc;
+  --blue-10: #101e32;
+  --blue-25: #253f62;
+  --blue-31: #313f56;
+  --gray-4a: #4a4a4a;
   --gray-66: #666666;
+  --gray-cc: #cccccc;
   --gray-f4: #f4f4f4;
   --gray-f7: #f7f7f7;
   --gray-fa: #fafafa;
-  --yellow-d8: #d8b520;
-  --blue-25: #253f62;
-  --red-7c: #7c210f;
   --green-42: #427b10;
-  --blue-31: #313f56;
-  --blue-10: #101e32;
+  --red-7c: #7c210f;
+  --white-ff: #ffffff;
+  --yellow-d8: #d8b520;
 
   --font-family: "Poppins", sans-serif;
   --font-family-alt: "Lato", sans-serif;
@@ -27,7 +28,6 @@
 body {
   font-family: var(--font-family);
   margin: 0;
-  overflow-x: hidden;
 }
 
 .title {
@@ -70,9 +70,10 @@ body {
 }
 
 #section-1 {
-  align-items: center;
   display: grid;
   justify-items: center;
+  overflow: hidden;
+  position: relative;
 }
 
 #section-1 > * {
@@ -90,6 +91,8 @@ body {
 
 #section-1-personnage {
   align-self: end;
+  pointer-events: none;
+  user-select: none;
   z-index: 1;
 }
 
