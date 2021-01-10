@@ -1,7 +1,7 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
-module.exports = ["home", "mairies", "caves-et-cooperatives"].map(page => {
+module.exports = ["home", "mairies", "caves-et-cooperatives", "logistique-et-industrie"].map(page => {
   return {
     mode: "production",
     entry: path.resolve(__dirname, "src", page, "index.ts"),
