@@ -1,5 +1,5 @@
 import {cssOfStr, tplOfStr, findFirstOrFail} from "../dom-utils";
-import style from "./index.css";
+import css from "./index.css";
 import tpl from "./index.html";
 
 function clamp(min: number, max: number, n: number) {
@@ -15,7 +15,7 @@ export class ATSFrame extends HTMLElement {
   public constructor() {
     super();
     const root = this.attachShadow({mode: "open"});
-    root.append(cssOfStr(style), tplOfStr(tpl));
+    root.append(cssOfStr(css), tplOfStr(tpl));
     this.content = findFirstOrFail(root, HTMLSlotElement, "slot[name='animated-content']");
     this.threshold = parseFloat(this.getAttribute("threshold") || "0.75");
 

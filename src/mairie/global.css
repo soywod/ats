@@ -165,7 +165,7 @@ body {
 #section-2-c {
   align-content: center;
   align-items: center;
-  background-position: center center;
+  background: url(./section-2-c.jpeg) center center no-repeat;
   background-size: cover;
   display: grid;
   grid-column: 1;
@@ -188,7 +188,7 @@ body {
 #section-2-d {
   align-content: center;
   align-items: center;
-  background-position: center center;
+  background: url(./section-2-d.jpeg) center center no-repeat;
   background-size: cover;
   display: grid;
   grid-column: 2;
@@ -404,7 +404,7 @@ body {
 #section-5-b {
   align-content: center;
   align-items: center;
-  background-position: center center;
+  background: url(./section-5-b.jpeg) center center no-repeat;
   background-size: cover;
   display: grid;
   grid-column: 1;
@@ -453,7 +453,7 @@ body {
 #section-5-d {
   align-content: center;
   align-items: center;
-  background-position: center center;
+  background: url(./section-5-d.jpeg) center center no-repeat;
   background-size: cover;
   display: grid;
   grid-column: 2;
@@ -624,7 +624,7 @@ body {
 #section-7-c {
   align-content: center;
   align-items: center;
-  background-position: center center;
+  background: url(./section-7-c.jpeg) center center no-repeat;
   background-size: cover;
   display: grid;
   grid-column: 1;
@@ -647,7 +647,7 @@ body {
 #section-7-d {
   align-content: center;
   align-items: center;
-  background-position: center center;
+  background: url(./section-7-d.jpeg) center center no-repeat;
   background-size: cover;
   display: grid;
   grid-column: 2;
@@ -750,7 +750,7 @@ body {
 #section-9-b {
   align-content: center;
   align-items: center;
-  background-position: center center;
+  background: url(./section-9-b.jpeg) center center no-repeat;
   background-size: cover;
   display: grid;
   grid-column: 1;
@@ -799,7 +799,7 @@ body {
 #section-9-d {
   align-content: center;
   align-items: center;
-  background-position: center center;
+  background: url(./section-9-d.jpeg) center center no-repeat;
   background-size: cover;
   display: grid;
   grid-column: 2;
@@ -817,4 +817,41 @@ body {
   margin: 0;
   max-width: 60%;
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 100em) {
+  .title {
+    font-size: 2.5rem;
+    padding-top: 2.5rem;
+  }
+
+  .button {
+    font-size: 1rem;
+    padding: 0.5rem 2.25rem;
+  }
+
+  #section-4-title {
+    font-size: 2rem;
+  }
+
+  #section-5 {
+    padding: 4rem 0;
+  }
+
+  #section-7-title {
+    font-size: 2.75rem;
+    margin: 17.5rem 0;
+  }
+
+  #section-8 {
+    padding: 4rem 0;
+  }
+
+  #section-8-title {
+    font-size: 2.5rem;
+  }
+
+  .section-9-image {
+    height: 10rem;
+  }
 }

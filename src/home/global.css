@@ -1,14 +1,15 @@
 :root {
-  --white-ff: #ffffff;
-  --black-22: #222222;
   --black-00: #000000;
-  --gray-cc: #cccccc;
-  --gray-66: #666666;
-  --gray-f4: #f4f4f4;
-  --yellow-d8: #d8b520;
+  --black-22: #222222;
   --blue-25: #253f62;
-  --red-7c: #7c210f;
+  --gray-66: #666666;
+  --gray-cc: #cccccc;
+  --gray-f4: #f4f4f4;
+  --gray-f7: #f7f7f7;
   --green-42: #427b10;
+  --red-7c: #7c210f;
+  --white-ff: #ffffff;
+  --yellow-d8: #d8b520;
 
   --font-family: "Poppins", sans-serif;
   --font-family-alt: "Lato", sans-serif;
@@ -133,6 +134,7 @@ body {
 #section-4 {
   align-items: flex-end;
   background-color: var(--white-ff);
+  border-color: var(--white-ff);
   display: grid;
   justify-items: center;
   position: relative;
@@ -183,6 +185,7 @@ body {
 
 #section-7 {
   align-items: center;
+  border-color: var(--white-ff);
   display: grid;
   justify-items: center;
   position: relative;
@@ -279,4 +282,41 @@ body {
   padding: 1rem 0 5rem 0;
   position: relative;
   text-align: center;
+}
+
+@media screen and (max-width: 100em) {
+  .title {
+    font-size: 2.5rem;
+    padding-top: 2.5rem;
+  }
+
+  .button {
+    font-size: 1rem;
+    padding: 0.5rem 2.25rem;
+  }
+
+  #section-4-title {
+    font-size: 2rem;
+  }
+
+  #section-5 {
+    padding: 4rem 0;
+  }
+
+  #section-7-title {
+    font-size: 2.75rem;
+    margin: 17.5rem 0;
+  }
+
+  #section-8 {
+    padding: 4rem 0;
+  }
+
+  #section-8-title {
+    font-size: 2.5rem;
+  }
+
+  .section-9-image {
+    height: 10rem;
+  }
 }

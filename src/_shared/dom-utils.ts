@@ -16,7 +16,7 @@ export function tplOfStr(str: string) {
 }
 
 export function findOrFail<T extends HTMLElement>(
-  parent: DocumentFragment | null,
+  parent: Document | DocumentFragment | null,
   type: Constructor<T>,
   id: string,
 ): T {

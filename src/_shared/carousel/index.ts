@@ -1,5 +1,5 @@
 import {cssOfStr, tplOfStr, findOrFail} from "../dom-utils";
-import style from "./index.css";
+import css from "./index.css";
 import tpl from "./index.html";
 
 import "./item";
@@ -13,7 +13,7 @@ class ATSCarousel extends HTMLElement {
 
   public constructor() {
     super();
-    this.attachShadow({mode: "open"}).append(cssOfStr(style), tplOfStr(tpl));
+    this.attachShadow({mode: "open"}).append(cssOfStr(css), tplOfStr(tpl));
 
     this.prevBtn = findOrFail(this.shadowRoot, HTMLButtonElement, "prev");
     this.prevBtn.style.visibility = "hidden";

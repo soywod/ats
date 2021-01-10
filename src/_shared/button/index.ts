@@ -1,5 +1,5 @@
 import {cssOfStr, tplOfStr} from "../dom-utils";
-import style from "./index.css";
+import css from "./index.css";
 import tpl from "./index.html";
 
 class Button extends HTMLButtonElement {
@@ -80,4 +80,4 @@ class Button extends HTMLButtonElement {
 }
 
 customElements.define("ats-button", Button, {extends: "button"});
-customElements.whenDefined("ats-button").then(() => document.head.prepend(cssOfStr(style)));
+customElements.whenDefined("ats-button").then(() => document.head.prepend(cssOfStr(css)));

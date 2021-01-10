@@ -1,5 +1,5 @@
 import {cssOfStr} from "../dom-utils";
-import style from "./index.css";
+import css from "./index.css";
 
 export class ATSImg extends HTMLImageElement {
   private intersection$: IntersectionObserver;
@@ -31,4 +31,4 @@ export class ATSImg extends HTMLImageElement {
 }
 
 customElements.define("ats-img", ATSImg, {extends: "img"});
-customElements.whenDefined("ats-img").then(() => document.head.append(cssOfStr(style)));
+customElements.whenDefined("ats-img").then(() => document.head.append(cssOfStr(css)));

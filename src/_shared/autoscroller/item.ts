@@ -1,11 +1,11 @@
 import {cssOfStr, tplOfStr} from "../dom-utils";
-import style from "./item.css";
+import css from "./item.css";
 import tpl from "./item.html";
 
 class ATSAutoscrollerItem extends HTMLElement {
   public constructor() {
     super();
-    this.attachShadow({mode: "open"}).append(cssOfStr(style), tplOfStr(tpl));
+    this.attachShadow({mode: "open"}).append(cssOfStr(css), tplOfStr(tpl));
   }
 }
 
