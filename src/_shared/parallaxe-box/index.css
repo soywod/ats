@@ -1,5 +1,5 @@
 :host {
   display: block;
   transform: scale(1.05);
-  transform-origin: top center;
+  transform-origin: center center;
 }

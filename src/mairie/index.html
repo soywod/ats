@@ -14,10 +14,10 @@
   <body>
     <ats-nav></ats-nav>
     <div id="section-1">
-      <ats-parallaxe-box value="150" direction="reverse">
+      <ats-parallaxe-box ratio="0.02" direction="reverse">
         <img id="section-1-bg-far" src="./section-1-bg-far.jpeg" alt="" />
       </ats-parallaxe-box>
-      <ats-parallaxe-box value="40">
+      <ats-parallaxe-box ratio="0.005" type="rotate-y">
         <img id="section-1-bg-close" src="./section-1-bg-close.png" alt="" />
       </ats-parallaxe-box>
       <img id="section-1-personnage" src="./section-1-personnage.png" alt="" />
@@ -46,20 +46,20 @@
           </div>
           <img id="section-2-a-img" src="./section-2-a.png" alt="" />
         </div>
-        <div id="section-2-b">
+        <ats-intersection-box id="section-2-b" threshold="0.2">
           <h4 id="section-2-b-title">Vêtements HVI, Standard, Chaussures, EPI, spécifiques, Accessoires</h4>
           <img id="section-2-b-img" src="./section-2-b.png" alt="" />
-        </div>
-        <div id="section-2-c">
+        </ats-intersection-box>
+        <ats-intersection-box id="section-2-c" threshold="0.2">
           <h3 id="section-2-c-title">Promos 1 texte court</h3>
           <button class="button">&gt; Voir</button>
-        </div>
-        <div id="section-2-d">
+        </ats-intersection-box>
+        <ats-intersection-box id="section-2-d" threshold="0.3">
           <h3 id="section-2-d-title">PROMOS 2 SUR produit dont le titre EST ici</h3>
           <button class="button">&gt; Voir</button>
-        </div>
+        </ats-intersection-box>
       </div>
-      <div id="section-3">
+      <ats-intersection-box id="section-3" threshold="0.2">
         <img id="section-3-border" src="./section-3.png" alt="" />
         <h3 id="section-3-title">Équipez votre société grâce à notre équipe d’experts</h3>
         <div id="section-3-imgs">
@@ -84,20 +84,18 @@
           <span id="section-3-btn-label">contactez<br />nous au</span>
           <span id="section-3-btn-phone-number">0476543898</span>
         </button>
-      </div>
+      </ats-intersection-box>
     </ats-container>
     <ats-frame id="section-4">
-      <ats-intersection-box-group id="section-4-bg">
-        <ats-intersection-box threshold="0">
-          <img class="section-4-bg" src="./section-4-a.jpeg" alt="" />
-        </ats-intersection-box>
-        <ats-intersection-box threshold="0.5">
+      <img id="section-4-bg" src="./section-4-a.jpeg" alt="" />
+      <ats-intersection-box-group id="section-4-bgs">
+        <ats-intersection-box threshold="0.6">
           <img class="section-4-bg" src="./section-4-b.jpeg" alt="" />
         </ats-intersection-box>
-        <ats-intersection-box threshold="0.7">
+        <ats-intersection-box threshold="0.8">
           <img class="section-4-bg" src="./section-4-c.jpeg" alt="" />
         </ats-intersection-box>
-        <ats-intersection-box threshold="0.9">
+        <ats-intersection-box threshold="1">
           <img class="section-4-bg" src="./section-4-d.jpeg" alt="" />
         </ats-intersection-box>
       </ats-intersection-box-group>
@@ -112,25 +110,25 @@
     <div id="section-5-container">
       <ats-container>
         <div id="section-5">
-          <div id="section-5-a">
+          <ats-intersection-box id="section-5-a" threshold="0.2">
             <img id="section-5-a-1-img" src="./section-5-a-1.png" alt="" />
             <img id="section-5-a-2-img" src="./section-5-a-2.png" alt="" />
             <h3 id="section-5-a-title">Signalétique &amp;<br />signalisation</h3>
-          </div>
-          <div id="section-5-b">
+          </ats-intersection-box>
+          <ats-intersection-box id="section-5-b" threshold="0.2">
             <h3 id="section-5-b-title">Focus sur un produit dont le titre EST ici</h3>
-          </div>
-          <div id="section-5-c">
+          </ats-intersection-box>
+          <ats-intersection-box id="section-5-c" threshold="0.3">
             <h4 id="section-5-c-title">
               Panneaux normés, non normés, plaques de rue, banderoles, signalétique d’intérêt local
             </h4>
             <img id="section-5-c-img" src="./section-5-c.png" alt="" />
-          </div>
-          <div id="section-5-d">
+          </ats-intersection-box>
+          <ats-intersection-box id="section-5-d" threshold="0.2">
             <h3 id="section-5-d-title">PROMOS 1 TEXTE COURT</h3>
             <button class="button">&gt; Voir</button>
-          </div>
-          <div id="section-5-e">
+          </ats-intersection-box>
+          <ats-intersection-box id="section-5-e" threshold="0.2">
             <div id="section-5-e-desc">
               <div id="section-5-e-desc-icons">
                 <svg viewBox="0 0 1500 1500" width="4rem" height="4rem">
@@ -181,7 +179,7 @@
               <button class="button">Voir l'équipe &gt;</button>
             </div>
             <img id="section-5-e-img" src="./section-5-e.png" alt="" />
-          </div>
+          </ats-intersection-box>
         </div>
       </ats-container>
     </div>
@@ -214,25 +212,25 @@
     <div id="section-7-container">
       <ats-container>
         <div id="section-7">
-          <div id="section-7-a">
+          <ats-intersection-box id="section-7-a" threshold="0.2">
             <div>
               <h3 id="section-7-a-title">Mobilier urbain</h3>
             </div>
             <img id="section-7-a-img" src="./section-7-a.png" alt="" />
-          </div>
-          <div id="section-7-b">
+          </ats-intersection-box>
+          <ats-intersection-box id="section-7-b" threshold="0.2">
             <h4 id="section-7-b-title">
               Bancs, corbeilles, borne en acier, épingles, portiques, abris-bus, potelets..
             </h4>
             <img id="section-7-b-img" src="./section-7-b.png" alt="" />
-          </div>
-          <div id="section-7-c">
+          </ats-intersection-box>
+          <ats-intersection-box id="section-7-c" threshold="0.2">
             <h3 id="section-7-c-title">Promos 1 texte court</h3>
             <button class="button">&gt; Voir</button>
-          </div>
-          <div id="section-7-d">
+          </ats-intersection-box>
+          <ats-intersection-box id="section-7-d" threshold="0.3">
             <h3 id="section-7-d-title">PROMOS 7 SUR produit dont le titre EST ici</h3>
-          </div>
+          </ats-intersection-box>
         </div>
       </ats-container>
     </div>
@@ -250,18 +248,18 @@
     <div id="section-9-container">
       <ats-container>
         <div id="section-9">
-          <div id="section-9-a">
+          <ats-intersection-box id="section-9-a" threshold="0.2">
             <h3 id="section-9-a-title">Mobilier<br />de loisir</h3>
             <img id="section-9-img" src="./section-9-a.png" alt="" />
-          </div>
-          <div id="section-9-b">
+          </ats-intersection-box>
+          <ats-intersection-box id="section-9-b" threshold="0.2">
             <h3 id="section-9-b-title">Focus sur un produit dont le titre EST ici</h3>
-          </div>
-          <div id="section-9-c">
+          </ats-intersection-box>
+          <ats-intersection-box id="section-9-c" threshold="0.3">
             <h4 id="section-9-c-title">Aire de jeux, Multisport, Skate parc, parcours de santé, sols souples …</h4>
             <img id="section-9-c-img" src="./section-9-c.png" alt="" />
-          </div>
-          <div id="section-9-d"></div>
+          </ats-intersection-box>
+          <ats-intersection-box id="section-9-d" threshold="0.2"></ats-intersection-box>
         </div>
       </ats-container>
     </div>

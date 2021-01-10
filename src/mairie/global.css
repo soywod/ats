@@ -310,9 +310,15 @@ body {
   position: relative;
 }
 
+#section-4-bgs {
+  grid-column: 1;
+  grid-row: 1;
+}
+
 #section-4-bg {
   grid-column: 1;
   grid-row: 1;
+  width: 100%;
 }
 
 .section-4-bg {
