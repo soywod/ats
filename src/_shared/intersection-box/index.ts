@@ -5,7 +5,7 @@ import css from "./index.css";
 import tpl from "./index.html";
 
 export class ATSIntersectionBox extends HTMLElement {
-  private threshold: number;
+  protected threshold: number;
 
   public constructor() {
     super();

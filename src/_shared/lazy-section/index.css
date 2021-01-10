@@ -1,0 +1,11 @@
+:host {
+  transform: translateY(6rem);
+  transition-duration: 500ms;
+  transition-property: opacity, transform;
+  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+:host([visible]) {
+  opacity: 1;
+  transform: translateY(0);
+}

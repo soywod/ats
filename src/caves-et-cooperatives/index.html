@@ -39,24 +39,23 @@
         <div id="section-2-a">
           <div>
             <h3 id="section-2-a-title">Vêtements et epi</h3>
-            <h4 id="section-2-a-subtitle">En savoir + sur nos gammes pour les mairies et les collectivités</h4>
           </div>
           <img id="section-2-a-img" src="./section-2-a.png" alt="" />
         </div>
-        <ats-intersection-box id="section-2-b" threshold="0.2">
+        <ats-lazy-section id="section-2-b">
           <h4 id="section-2-b-title">Vêtements HVI, Standard, Chaussures, EPI, spécifiques, Accessoires</h4>
           <img id="section-2-b-img" src="./section-2-b.png" alt="" />
-        </ats-intersection-box>
-        <ats-intersection-box id="section-2-c" threshold="0.2">
+        </ats-lazy-section>
+        <ats-lazy-section id="section-2-c">
           <h3 id="section-2-c-title">Promos 1 texte court</h3>
           <button class="button">&gt; Voir</button>
-        </ats-intersection-box>
-        <ats-intersection-box id="section-2-d" threshold="0.3">
+        </ats-lazy-section>
+        <ats-lazy-section id="section-2-d" threshold="0.2">
           <h3 id="section-2-d-title">PROMOS 2 SUR produit dont le titre EST ici</h3>
           <button class="button">&gt; Voir</button>
-        </ats-intersection-box>
+        </ats-lazy-section>
       </div>
-      <ats-intersection-box id="section-3" threshold="0.2">
+      <ats-lazy-section id="section-3">
         <img id="section-3-border" src="./section-3.png" alt="" />
         <h3 id="section-3-title">Équipez votre société grâce à notre équipe d’experts</h3>
         <div id="section-3-imgs">
@@ -81,18 +80,18 @@
           <span id="section-3-btn-label">contactez<br />nous au</span>
           <span id="section-3-btn-phone-number">0476543898</span>
         </button>
-      </ats-intersection-box>
+      </ats-lazy-section>
     </ats-container>
     <ats-frame id="section-4">
       <img id="section-4-bg" src="./section-4-a.jpeg" alt="" />
       <ats-intersection-box-group id="section-4-bgs">
-        <ats-intersection-box threshold="0.6">
+        <ats-intersection-box threshold="0.5">
           <img class="section-4-bg" src="./section-4-b.jpeg" alt="" />
         </ats-intersection-box>
-        <ats-intersection-box threshold="0.8">
+        <ats-intersection-box threshold="0.65">
           <img class="section-4-bg" src="./section-4-c.jpeg" alt="" />
         </ats-intersection-box>
-        <ats-intersection-box threshold="1">
+        <ats-intersection-box threshold="0.8">
           <img class="section-4-bg" src="./section-4-d.jpeg" alt="" />
         </ats-intersection-box>
       </ats-intersection-box-group>
@@ -107,159 +106,129 @@
     <div id="section-5-container">
       <ats-container>
         <div id="section-5">
-          <ats-intersection-box id="section-5-a" threshold="0.2">
-            <img id="section-5-a-1-img" src="./section-5-a-1.png" alt="" />
+          <ats-lazy-section id="section-5-a">
             <img id="section-5-a-2-img" src="./section-5-a-2.png" alt="" />
             <h3 id="section-5-a-title">Signalétique &amp;<br />signalisation</h3>
-          </ats-intersection-box>
-          <ats-intersection-box id="section-5-b" threshold="0.2">
+          </ats-lazy-section>
+          <ats-lazy-section id="section-5-b">
             <h3 id="section-5-b-title">Focus sur un produit dont le titre EST ici</h3>
-          </ats-intersection-box>
-          <ats-intersection-box id="section-5-c" threshold="0.3">
+          </ats-lazy-section>
+          <ats-lazy-section id="section-5-c">
             <h4 id="section-5-c-title">
               Panneaux normés, non normés, plaques de rue, banderoles, signalétique d’intérêt local
             </h4>
             <img id="section-5-c-img" src="./section-5-c.png" alt="" />
-          </ats-intersection-box>
-          <ats-intersection-box id="section-5-d" threshold="0.2">
+          </ats-lazy-section>
+          <ats-lazy-section id="section-5-d">
             <h3 id="section-5-d-title">PROMOS 1 TEXTE COURT</h3>
             <button class="button">&gt; Voir</button>
-          </ats-intersection-box>
-          <ats-intersection-box id="section-5-e" threshold="0.2">
-            <div id="section-5-e-desc">
-              <div id="section-5-e-desc-icons">
-                <svg viewBox="0 0 1500 1500" width="4rem" height="4rem">
-                  <circle fill="#d8b520" cx="754.3" cy="756.7" r="736.7" />
-                  <path
-                    fill="#ffffff"
-                    d="M928.5,520.4c-0.7-0.6-1.1-1-1.3-1.2c-14.2-15.2-53.7-22.9-76-26.1l-5.4-0.8l2.8-4.7 c6.8-11.4,14.7-29.9,13.7-52.7c-5-119.3-62.6-144.4-109.9-144.4c-23.4,0-100.3,10.4-106,144.4c-1,23.3,7.2,42,14.3,53.6l2.7,4.5 l-5.1,1c-41.4,8.4-70.6,18.5-79.9,27.9c-26.6,26.6-88.3,116.9-88.3,381c0,4.3,1.8,8.2,5,11c10.9,9.6,42.7,7.8,68.9,3 c2.3-0.4,4.1-2.3,4.7-4.7l48.2-159.7l-0.9,28c-0.7,20.1-1.3,38.4-2,55.3c-1.5,39.2-2.6,70.2-2.6,99.8 c0,73.6,9.5,260.2,10.5,281.3c0.2,3.6,2.8,6.2,5.9,6.2H724c3.1,0,5.6-2.5,5.9-5.7l20.8-244.2h7.3l20.8,244.2 c0.3,3.3,2.8,5.7,5.9,5.7h96.3c3.1,0,5.7-2.6,5.9-6c0.1-2,10.6-204.7,10.6-281.5c0-29.6-1.2-60.5-2.6-99.7 c-0.6-16.9-1.3-35.2-2-55.4l-0.9-27.9l48.1,159.5c0.6,2.6,2.5,4.5,4.8,4.9c26.1,4.8,57.9,6.6,68.8-3c3.2-2.8,5-6.7,5-11 C1018.5,620.3,949.6,538.7,928.5,520.4z M787.3,515.9l-20.6,110.6l0.7,234.3c0,7.5-5.9,13.7-13.2,13.7h0 c-7.3,0-13.2-6.1-13.2-13.6l-0.7-233.7l-19.2-111.3c-35.9-35.1-37.9-83.6-28.7-114.6c9.7-32.6,32.3-54.7,59-57.7 c0.6-0.1,1.2-0.1,1.8-0.1c27.3,0.6,51.1,21,62.1,53C827.1,431,822.9,481.1,787.3,515.9z"
-                  />
-                </svg>
-                <svg viewBox="0 0 1500 1500" width="4rem" height="4rem">
-                  <circle fill="#d8b520" cx="754.3" cy="756.7" r="736.7" />
-                  <path
-                    fill="#ffffff"
-                    d="M1091.5,735.1c4.5-6.6,4.5-15.4,0-22l-51.2-74.5c-3.6-5.3-9.6-8.4-16-8.4H810.9V477.4c0-4.1-1.3-8.1-3.7-11.4 L770,414.7c-3.6-5-9.5-8-15.7-8s-12.1,3-15.7,8l-37.2,51.2c-2.4,3.3-3.7,7.3-3.7,11.4v3.9H484.3c-6.4,0-12.4,3.1-16,8.4 l-51.2,74.5c-4.5,6.6-4.5,15.4,0,22l51.2,74.5c3.6,5.3,9.6,8.4,16,8.4h213.4v398.8H571.9v38.8h364.7v-38.8H810.9V818h213.4 c6.4,0,12.4-3.1,16-8.4L1091.5,735.1z"
-                  />
-                </svg>
-                <svg viewBox="0 0 1500 1500" width="4rem" height="4rem">
-                  <circle fill="#d8b520" cx="754.3" cy="756.7" r="736.7" />
-                  <path
-                    fill="#ffffff"
-                    d="M1200.6,555.8c-0.8-6.6-6.8-11.2-13.4-10.4l-95.5,12.1l-2.9-22.2c0,0,0,0,0,0c0,0,0,0,0,0l0-0.1 c0,0,0,0,0,0c-2.5-19.6-20.6-33.6-40.3-31.1c0,0,0,0,0,0c0,0,0,0,0,0l-94.7,12.2c-0.1,0-0.2,0-0.2,0c-0.1,0-0.2,0-0.3,0 c-19.6,3.4-33,20.9-30.6,39.8c0,0,0,0,0,0c0,0,0,0,0,0l2.9,22.2l-88.5,11.2c-6.6,0.8-11.2,6.8-10.4,13.4 c0.8,6,5.9,10.5,11.8,10.5c0.5,0,1,0,1.5-0.1l350.1-44.5C1196.8,568.3,1201.5,562.3,1200.6,555.8z M946.5,553.3L946.5,553.3 c-0.9-7.1,4.9-12.1,10.9-13.2l94.2-12.2c0,0,0,0,0,0c6.5-0.8,12.7,4,13.6,10.4c0,0,0,0,0,0c0,0,0,0,0,0l2.9,22.1l-118.6,15.1 L946.5,553.3z"
-                  />
-                  <path
-                    fill="#ffffff"
-                    d="M1193,638c0-1.2-0.2-2.4-0.5-3.5c-0.1-0.2-0.2-0.5-0.3-0.7c0-0.1-0.1-0.2-0.1-0.4c-0.1-0.3-0.3-0.6-0.4-0.8 c0-0.1-0.1-0.1-0.1-0.2c-0.1-0.3-0.3-0.5-0.4-0.7c-0.1-0.1-0.1-0.2-0.2-0.3c-0.1-0.2-0.3-0.4-0.4-0.6c-0.1-0.1-0.2-0.2-0.2-0.3 c-0.1-0.2-0.3-0.3-0.4-0.5c-0.1-0.1-0.2-0.3-0.4-0.4c-0.1-0.1-0.2-0.2-0.3-0.3c-0.2-0.2-0.3-0.3-0.5-0.5 c-0.1-0.1-0.2-0.1-0.3-0.2c-0.2-0.2-0.4-0.3-0.6-0.5c-0.1-0.1-0.2-0.1-0.3-0.2c-0.2-0.1-0.5-0.3-0.7-0.4 c-0.2-0.1-0.3-0.2-0.5-0.2c-0.2-0.1-0.4-0.2-0.5-0.3c-1.1-0.5-2.3-0.8-3.5-0.9c0,0,0,0,0,0c-0.1,0-0.3,0-0.4,0 c-0.3,0-0.5,0-0.8,0h0c0,0,0,0,0,0H842.5c0,0,0,0,0,0h0c-0.2,0-0.4,0-0.6,0c-0.2,0-0.4,0-0.6,0c0,0,0,0,0,0 c-1.2,0.1-2.4,0.4-3.5,0.9c-0.3,0.1-0.7,0.3-1,0.5c0,0-0.1,0-0.1,0c-0.6,0.3-1.2,0.7-1.8,1.2c0,0-0.1,0.1-0.1,0.1 c-0.2,0.2-0.4,0.4-0.6,0.6c-0.1,0.1-0.2,0.1-0.2,0.2c-0.1,0.1-0.3,0.3-0.4,0.5c-0.1,0.1-0.2,0.3-0.4,0.4 c-0.1,0.1-0.2,0.2-0.3,0.4c-0.1,0.2-0.3,0.4-0.4,0.6c-0.1,0.1-0.1,0.2-0.1,0.2c-0.2,0.2-0.3,0.5-0.5,0.8c0,0,0,0.1-0.1,0.1 c-0.2,0.3-0.3,0.6-0.4,0.9c0,0.1-0.1,0.2-0.1,0.3c-0.1,0.3-0.2,0.5-0.3,0.8c-0.3,1.1-0.5,2.3-0.5,3.5c0,0,0,0,0,0 c0,0.2,0,0.4,0,0.7c0,0.2,0,0.4,0,0.5l0,0c0,0,0,0,0,0L863.9,977c0,0,0,0,0,0c1.8,18.2,17.6,32.4,36,32.4h223.6 c18.4,0,33.7-13.9,35.6-32.4c0,0,0,0,0,0l33.9-337.8c0,0,0,0,0,0l0,0c0-0.2,0-0.3,0-0.5C1193,638.5,1193,638.3,1193,638 C1193,638.1,1193,638,1193,638z M939.4,963.4c-0.5,0-1,0-1.5,0c-9.9,0-18.2-5.5-19-12.6l-29.7-264c-0.8-7.5,7-14.1,17.5-14.7 c10.5-0.6,19.7,5,20.6,12.5l29.7,264C957.7,956.2,949.9,962.8,939.4,963.4z M1030.8,949.8c0,7.5-8.6,13.6-19.1,13.6 c-10.5,0-19.1-6.1-19.1-13.6v-264c0-7.5,8.6-13.6,19.1-13.6c10.5,0,19.1,6.1,19.1,13.6V949.8z M1104.6,950.9 c-0.8,7-9.1,12.6-19,12.6c-0.5,0-1,0-1.5,0c-10.5-0.6-18.3-7.2-17.5-14.7l29.7-264c0.8-7.5,9.9-13.1,20.6-12.5 c10.5,0.6,18.3,7.2,17.5,14.7L1104.6,950.9z"
-                  />
-                  <path
-                    fill="#ffffff"
-                    d="M790.9,814.9H474.3v-38.7h312.2c-1.8-15.7-3.6-31.9-5.4-47.6H474.3v-34.5h302.9c-2-17.6-3.8-33.6-5.2-46.2 H474.2l0.1-23.2c0-0.1,0-0.2,0-0.2c0-0.1,0-0.1,0-0.2c-0.6-16.1-0.6-28.7-16.6-28.7h-0.1c-15.9,0.1-17.7,13.2-18.2,29.2 c0,0.1,0,0.1,0,0.2c0,0.1,0,0.1,0,0.1l-0.1,22.8h-91.7c-17.7,0-31.9,3.3-31.9,21.8c0,18.5,14.4,24.4,32.1,24.4h91.7v34.5h-91.7 c-17.2,0-31.2,5.4-31.2,23.6c0,18.4,14.3,23.9,31.2,23.9h91.7v38.7h-113c-10.2,0-18.5,8.5-18.5,18.9v15.9 c0,10.4,8.3,18.9,18.5,18.9h28.3v87.7c0,6,4.9,10.9,10.9,10.9h13.3c6,0,10.9-4.9,10.9-10.9v-87.7h49.6v73.7 c0,6,4.8,10.9,10.8,10.9h12.5c6,0,10.9-4.9,10.9-10.9v-73.7h323.5C795.6,856.1,793.4,837,790.9,814.9z"
-                  />
-                </svg>
-                <svg viewBox="0 0 1500 1500" width="4rem" height="4rem">
-                  <circle fill="#d8b520" cx="754.3" cy="756.7" r="736.7" />
-                  <path
-                    fill="#ffffff"
-                    d="M1078.3,1018.1l4.1,0.8v0l-4-1.2l0.2-2.6l0-136.7h4.2l0,0l-4.2,0c0-10.5-3.4-20.4-9.7-28.7l-1-1.2L909.8,685 V578.7h4.2c11.6,0,22.3-7.4,26.7-18.4c4.3-10.8,1.6-23-6.8-31.1l-0.3-0.3l-163.6-156c-10.9-10.4-28.7-10.4-39.6,0L566.4,529.3 c-8.2,7.9-10.7,20.1-6.3,31.1c4.5,11.2,14.7,18.4,26.2,18.4h4.2l0,4.2v167.6h-4.7c-32.2,0-62.2,14.7-82.3,40.2L387.5,937.9 c-4.3,5.5-11,8.8-17.8,8.8l-12.2,0c-22.2,0.6-39.8,18.6-39.8,41.1c0,22.7,17.6,41,40,41.6l12,0c32.5,0,62.7-14.7,82.8-40.2 l115.8-147.2c4.5-5.7,10.6-8.8,17.3-8.8h4.7v182.2c0,7.7,6.3,14,14,14h54.6c7.7,0,14-6.3,14-14V1005h154.1v10.4 c0,7.7,6.3,14,14,14h54.6c7.7,0,14-6.3,14-14v-69.6l63.7,65.9c9,9.3,21.1,14.4,34.1,14.4h60.2c0.4,0,0.7,0,1.1-0.1l2.5-0.6 l2.1,3.7l-1.6-3.9l1.4-0.7l2.8,3.2l0,0l-2.3-3.4l2-1.7l3.6,2.2v0l0,0l-3.2-2.7l0.3-0.4l3.5,2.3v0l-3.2-2.7l1.2-2.3l4,1.2 c0,0,0,0,0,0l-3.8-1.6L1078.3,1018.1z M954.1,812.1l43.3,44.8v98L954.1,910V812.1z M827.1,925.1H673.1v-68.3h154.1V925.1z M827.1,799.2H673.1v-33.6c0-42.6,34.7-77.3,77.3-77.3c42.3,0,76.8,34.7,76.8,77.3V799.2z M827.1,655.4l-6.9-6.2 c-19.1-17.2-43.9-26.7-69.8-26.7c-26,0-51,9.6-70.3,27l-6.9,6.2v-77h154.1V655.4z"
-                  />
-                </svg>
-              </div>
-              <p>
-                <strong> ATS Agence, c’est avant tout une équipe d’experts...disponibles </strong>
-              </p>
-              <p>
-                ATS fournit le conseil et le cahier des charges à la réalisation d’un projet (mobilier urbain,
-                signalétique, EPI et vêtements)
-              </p>
-              <p>Assurant la conformité de celui-ci grâce à son bureau d’étude.</p>
-              <button class="button">Voir l'équipe &gt;</button>
-            </div>
-            <img id="section-5-e-img" src="./section-5-e.png" alt="" />
-          </ats-intersection-box>
+          </ats-lazy-section>
+          <ats-lazy-section id="section-5-e">
+            <h3 id="section-5-e-title">Besoin d’un conseil ?</h3>
+            <p>
+              Amet harum ex harum corporis dolores fuga Ab corrupti natus voluptates voluptas voluptates! Quibusdam eos
+              recusandae nisi ad unde Pariatur adipisci molestiae ut odio dolor Autem adipisci est aperiam officia
+              perferendis, voluptatibus ex odit? Cupiditate ab porro iusto optio qui eius Eos earum possimus eum libero
+              rerum possimus. Aut fugit!
+            </p>
+            <p><strong>Dolor a asperiores autem modi pariatur Soluta saepe facilis ipsa!</strong></p>
+            <button id="section-5-e-btn">
+              <svg id="section-5-e-btn-icon" viewBox="0 0 18.2 17.4">
+                <path
+                  fill="currentColor"
+                  d="M18.1,9.7c0-1.2-0.9-2.2-2-2.4V7.2c0-3.9-3.1-7-7-7s-7,3.1-7,7v0.1c-1.1,0.2-2,1.2-2,2.4c0,1.4,1.1,2.5,2.5,2.5 h0.6c0.5,2.8,2.9,5,5.9,5c2.2,0,4.1-1.2,5.2-3h1.3c0.3,0,0.5-0.2,0.5-0.5v-1.6C17.2,11.9,18.1,10.9,18.1,9.7z M9.1,1.2 c3.3,0,6,2.7,6,6H15c-0.5-2.8-2.9-5-5.9-5s-5.4,2.2-5.9,5H3.1C3.1,3.9,5.8,1.2,9.1,1.2z M14,7.1c-1.3-0.2-2.4-1.2-2.9-2.4l-0.1-0.2 c-0.1-0.2-0.2-0.3-0.4-0.3c-0.2,0-0.3,0-0.5,0.1L8.5,6.1C7.8,6.8,6.8,7.2,5.9,7.2H4.2c0.5-2.3,2.5-4,4.9-4C11.5,3.2,13.5,4.9,14,7.1 z M2.6,11.2c-0.8,0-1.5-0.7-1.5-1.5s0.7-1.5,1.5-1.5h0.5v3H2.6z M9.1,16.2c-2.8,0-5-2.2-5-5v-3h1.8c1.2,0,2.4-0.5,3.3-1.4l1.2-1.2 C11.1,7,12.5,8,14.1,8.2c0,0,0,0,0,0v3c0,0.7-0.2,1.4-0.4,2h-3.2c-0.2-0.6-0.8-1-1.4-1c-0.8,0-1.5,0.7-1.5,1.5s0.7,1.5,1.5,1.5 c0.7,0,1.2-0.4,1.4-1h2.6C12.1,15.4,10.7,16.2,9.1,16.2z M9.6,13.7c0,0.3-0.2,0.5-0.5,0.5S8.6,14,8.6,13.7s0.2-0.5,0.5-0.5 S9.6,13.4,9.6,13.7z M14.7,13.2c0.1-0.3,0.2-0.7,0.3-1h0.1v1H14.7z M15.6,11.2h-0.5v-3h0.5c0.8,0,1.5,0.7,1.5,1.5 S16.4,11.2,15.6,11.2z"
+                />
+              </svg>
+              <span id="section-5-e-btn-label">contactez<br />nous au</span>
+              <span id="section-5-e-btn-phone-number">0476543898</span>
+            </button>
+          </ats-lazy-section>
         </div>
       </ats-container>
     </div>
-    <div id="section-6-container">
-      <ats-frame id="section-6">
-        <img id="section-6-bg" src="./section-6.jpeg" alt="" />
-        <ats-intersection-box-group id="section-6-img">
-          <ats-intersection-box threshold="0.5">
-            <img class="section-6-img" src="./section-6-a.png" alt="" />
-          </ats-intersection-box>
-          <ats-intersection-box threshold="0.6">
-            <img class="section-6-img" src="./section-6-b.png" alt="" />
-          </ats-intersection-box>
-          <ats-intersection-box threshold="0.7">
-            <img class="section-6-img" src="./section-6-c.png" alt="" />
-          </ats-intersection-box>
-          <ats-intersection-box threshold="0.8">
-            <img class="section-6-img" src="./section-6-d.png" alt="" />
-          </ats-intersection-box>
-        </ats-intersection-box-group>
-        <ats-container id="section-6-content" slot="animated-content">
-          <h3 id="section-6-title">Animation sur le flocage</h3>
-          <p id="section-6-p">
-            Animation au scroll down, le panneau zoom un peu au scroll alors que le fond zoom un peu (effet hitchcock).
-          </p>
-          <button class="button">&gt; Voir</button>
-        </ats-container>
-      </ats-frame>
-    </div>
-    <div id="section-7-container">
-      <ats-container>
-        <div id="section-7">
-          <ats-intersection-box id="section-7-a" threshold="0.2">
-            <div>
-              <h3 id="section-7-a-title">Mobilier urbain</h3>
-            </div>
-            <img id="section-7-a-img" src="./section-7-a.png" alt="" />
-          </ats-intersection-box>
-          <ats-intersection-box id="section-7-b" threshold="0.2">
-            <h4 id="section-7-b-title">
-              Bancs, corbeilles, borne en acier, épingles, portiques, abris-bus, potelets..
-            </h4>
-            <img id="section-7-b-img" src="./section-7-b.png" alt="" />
-          </ats-intersection-box>
-          <ats-intersection-box id="section-7-c" threshold="0.2">
-            <h3 id="section-7-c-title">Promos 1 texte court</h3>
+    <ats-frame id="section-6">
+      <img id="section-6-bg" src="./section-6-a.jpeg" alt="" />
+      <ats-intersection-box-group id="section-6-bgs">
+        <ats-intersection-box threshold="0.5">
+          <img class="section-6-bg" src="./section-6-b.jpeg" alt="" />
+        </ats-intersection-box>
+        <ats-intersection-box threshold="0.6">
+          <img class="section-6-bg" src="./section-6-c.jpeg" alt="" />
+        </ats-intersection-box>
+        <ats-intersection-box threshold="0.7">
+          <img class="section-6-bg" src="./section-6-d.jpeg" alt="" />
+        </ats-intersection-box>
+        <ats-intersection-box threshold="0.8">
+          <img class="section-6-bg" src="./section-6-e.jpeg" alt="" />
+        </ats-intersection-box>
+      </ats-intersection-box-group>
+      <ats-container id="section-6-content-wrapper" slot="animated-content">
+        <div id="section-6-content">
+          <div>
+            <h3 id="section-6-title">Animation sur le flocage</h3>
+            <p id="section-6-p">
+              Animation au scroll down, le panneau zoom un peu au scroll alors que le fond zoom un peu (effet
+              hitchcock).
+            </p>
             <button class="button">&gt; Voir</button>
-          </ats-intersection-box>
-          <ats-intersection-box id="section-7-d" threshold="0.3">
-            <h3 id="section-7-d-title">PROMOS 7 SUR produit dont le titre EST ici</h3>
-          </ats-intersection-box>
+          </div>
         </div>
       </ats-container>
-    </div>
-    <div id="section-8-container">
-      <ats-frame id="section-8">
-        <img id="section-8-bg" src="./section-8.jpeg" alt="" />
-        <ats-container id="section-8-content" slot="animated-content">
-          <h3 id="section-8-title">
-            Bancs publics,<br />
-            <span>bancs publics …</span>
-          </h3>
-        </ats-container>
-      </ats-frame>
-    </div>
-    <div id="section-9-container">
-      <ats-container>
-        <div id="section-9">
-          <ats-intersection-box id="section-9-a" threshold="0.2">
-            <h3 id="section-9-a-title">Mobilier<br />de loisir</h3>
-            <img id="section-9-img" src="./section-9-a.png" alt="" />
-          </ats-intersection-box>
-          <ats-intersection-box id="section-9-b" threshold="0.2">
-            <h3 id="section-9-b-title">Focus sur un produit dont le titre EST ici</h3>
-          </ats-intersection-box>
-          <ats-intersection-box id="section-9-c" threshold="0.3">
-            <h4 id="section-9-c-title">Aire de jeux, Multisport, Skate parc, parcours de santé, sols souples …</h4>
-            <img id="section-9-c-img" src="./section-9-c.png" alt="" />
-          </ats-intersection-box>
-          <ats-intersection-box id="section-9-d" threshold="0.2"></ats-intersection-box>
+    </ats-frame>
+    <ats-container>
+      <ats-lazy-section id="section-7">
+        <div id="section-7-desc">
+          <div id="section-7-desc-icons">
+            <svg viewBox="0 0 1500 1500" width="4rem" height="4rem">
+              <circle fill="#d8b520" cx="754.3" cy="756.7" r="736.7" />
+              <path
+                fill="#ffffff"
+                d="M928.5,520.4c-0.7-0.6-1.1-1-1.3-1.2c-14.2-15.2-53.7-22.9-76-26.1l-5.4-0.8l2.8-4.7 c6.8-11.4,14.7-29.9,13.7-52.7c-5-119.3-62.6-144.4-109.9-144.4c-23.4,0-100.3,10.4-106,144.4c-1,23.3,7.2,42,14.3,53.6l2.7,4.5 l-5.1,1c-41.4,8.4-70.6,18.5-79.9,27.9c-26.6,26.6-88.3,116.9-88.3,381c0,4.3,1.8,8.2,5,11c10.9,9.6,42.7,7.8,68.9,3 c2.3-0.4,4.1-2.3,4.7-4.7l48.2-159.7l-0.9,28c-0.7,20.1-1.3,38.4-2,55.3c-1.5,39.2-2.6,70.2-2.6,99.8 c0,73.6,9.5,260.2,10.5,281.3c0.2,3.6,2.8,6.2,5.9,6.2H724c3.1,0,5.6-2.5,5.9-5.7l20.8-244.2h7.3l20.8,244.2 c0.3,3.3,2.8,5.7,5.9,5.7h96.3c3.1,0,5.7-2.6,5.9-6c0.1-2,10.6-204.7,10.6-281.5c0-29.6-1.2-60.5-2.6-99.7 c-0.6-16.9-1.3-35.2-2-55.4l-0.9-27.9l48.1,159.5c0.6,2.6,2.5,4.5,4.8,4.9c26.1,4.8,57.9,6.6,68.8-3c3.2-2.8,5-6.7,5-11 C1018.5,620.3,949.6,538.7,928.5,520.4z M787.3,515.9l-20.6,110.6l0.7,234.3c0,7.5-5.9,13.7-13.2,13.7h0 c-7.3,0-13.2-6.1-13.2-13.6l-0.7-233.7l-19.2-111.3c-35.9-35.1-37.9-83.6-28.7-114.6c9.7-32.6,32.3-54.7,59-57.7 c0.6-0.1,1.2-0.1,1.8-0.1c27.3,0.6,51.1,21,62.1,53C827.1,431,822.9,481.1,787.3,515.9z"
+              />
+            </svg>
+            <svg viewBox="0 0 1500 1500" width="4rem" height="4rem">
+              <circle fill="#d8b520" cx="754.3" cy="756.7" r="736.7" />
+              <path
+                fill="#ffffff"
+                d="M1091.5,735.1c4.5-6.6,4.5-15.4,0-22l-51.2-74.5c-3.6-5.3-9.6-8.4-16-8.4H810.9V477.4c0-4.1-1.3-8.1-3.7-11.4 L770,414.7c-3.6-5-9.5-8-15.7-8s-12.1,3-15.7,8l-37.2,51.2c-2.4,3.3-3.7,7.3-3.7,11.4v3.9H484.3c-6.4,0-12.4,3.1-16,8.4 l-51.2,74.5c-4.5,6.6-4.5,15.4,0,22l51.2,74.5c3.6,5.3,9.6,8.4,16,8.4h213.4v398.8H571.9v38.8h364.7v-38.8H810.9V818h213.4 c6.4,0,12.4-3.1,16-8.4L1091.5,735.1z"
+              />
+            </svg>
+            <svg viewBox="0 0 1500 1500" width="4rem" height="4rem">
+              <circle fill="#d8b520" cx="754.3" cy="756.7" r="736.7" />
+              <path
+                fill="#ffffff"
+                d="M1200.6,555.8c-0.8-6.6-6.8-11.2-13.4-10.4l-95.5,12.1l-2.9-22.2c0,0,0,0,0,0c0,0,0,0,0,0l0-0.1 c0,0,0,0,0,0c-2.5-19.6-20.6-33.6-40.3-31.1c0,0,0,0,0,0c0,0,0,0,0,0l-94.7,12.2c-0.1,0-0.2,0-0.2,0c-0.1,0-0.2,0-0.3,0 c-19.6,3.4-33,20.9-30.6,39.8c0,0,0,0,0,0c0,0,0,0,0,0l2.9,22.2l-88.5,11.2c-6.6,0.8-11.2,6.8-10.4,13.4 c0.8,6,5.9,10.5,11.8,10.5c0.5,0,1,0,1.5-0.1l350.1-44.5C1196.8,568.3,1201.5,562.3,1200.6,555.8z M946.5,553.3L946.5,553.3 c-0.9-7.1,4.9-12.1,10.9-13.2l94.2-12.2c0,0,0,0,0,0c6.5-0.8,12.7,4,13.6,10.4c0,0,0,0,0,0c0,0,0,0,0,0l2.9,22.1l-118.6,15.1 L946.5,553.3z"
+              />
+              <path
+                fill="#ffffff"
+                d="M1193,638c0-1.2-0.2-2.4-0.5-3.5c-0.1-0.2-0.2-0.5-0.3-0.7c0-0.1-0.1-0.2-0.1-0.4c-0.1-0.3-0.3-0.6-0.4-0.8 c0-0.1-0.1-0.1-0.1-0.2c-0.1-0.3-0.3-0.5-0.4-0.7c-0.1-0.1-0.1-0.2-0.2-0.3c-0.1-0.2-0.3-0.4-0.4-0.6c-0.1-0.1-0.2-0.2-0.2-0.3 c-0.1-0.2-0.3-0.3-0.4-0.5c-0.1-0.1-0.2-0.3-0.4-0.4c-0.1-0.1-0.2-0.2-0.3-0.3c-0.2-0.2-0.3-0.3-0.5-0.5 c-0.1-0.1-0.2-0.1-0.3-0.2c-0.2-0.2-0.4-0.3-0.6-0.5c-0.1-0.1-0.2-0.1-0.3-0.2c-0.2-0.1-0.5-0.3-0.7-0.4 c-0.2-0.1-0.3-0.2-0.5-0.2c-0.2-0.1-0.4-0.2-0.5-0.3c-1.1-0.5-2.3-0.8-3.5-0.9c0,0,0,0,0,0c-0.1,0-0.3,0-0.4,0 c-0.3,0-0.5,0-0.8,0h0c0,0,0,0,0,0H842.5c0,0,0,0,0,0h0c-0.2,0-0.4,0-0.6,0c-0.2,0-0.4,0-0.6,0c0,0,0,0,0,0 c-1.2,0.1-2.4,0.4-3.5,0.9c-0.3,0.1-0.7,0.3-1,0.5c0,0-0.1,0-0.1,0c-0.6,0.3-1.2,0.7-1.8,1.2c0,0-0.1,0.1-0.1,0.1 c-0.2,0.2-0.4,0.4-0.6,0.6c-0.1,0.1-0.2,0.1-0.2,0.2c-0.1,0.1-0.3,0.3-0.4,0.5c-0.1,0.1-0.2,0.3-0.4,0.4 c-0.1,0.1-0.2,0.2-0.3,0.4c-0.1,0.2-0.3,0.4-0.4,0.6c-0.1,0.1-0.1,0.2-0.1,0.2c-0.2,0.2-0.3,0.5-0.5,0.8c0,0,0,0.1-0.1,0.1 c-0.2,0.3-0.3,0.6-0.4,0.9c0,0.1-0.1,0.2-0.1,0.3c-0.1,0.3-0.2,0.5-0.3,0.8c-0.3,1.1-0.5,2.3-0.5,3.5c0,0,0,0,0,0 c0,0.2,0,0.4,0,0.7c0,0.2,0,0.4,0,0.5l0,0c0,0,0,0,0,0L863.9,977c0,0,0,0,0,0c1.8,18.2,17.6,32.4,36,32.4h223.6 c18.4,0,33.7-13.9,35.6-32.4c0,0,0,0,0,0l33.9-337.8c0,0,0,0,0,0l0,0c0-0.2,0-0.3,0-0.5C1193,638.5,1193,638.3,1193,638 C1193,638.1,1193,638,1193,638z M939.4,963.4c-0.5,0-1,0-1.5,0c-9.9,0-18.2-5.5-19-12.6l-29.7-264c-0.8-7.5,7-14.1,17.5-14.7 c10.5-0.6,19.7,5,20.6,12.5l29.7,264C957.7,956.2,949.9,962.8,939.4,963.4z M1030.8,949.8c0,7.5-8.6,13.6-19.1,13.6 c-10.5,0-19.1-6.1-19.1-13.6v-264c0-7.5,8.6-13.6,19.1-13.6c10.5,0,19.1,6.1,19.1,13.6V949.8z M1104.6,950.9 c-0.8,7-9.1,12.6-19,12.6c-0.5,0-1,0-1.5,0c-10.5-0.6-18.3-7.2-17.5-14.7l29.7-264c0.8-7.5,9.9-13.1,20.6-12.5 c10.5,0.6,18.3,7.2,17.5,14.7L1104.6,950.9z"
+              />
+              <path
+                fill="#ffffff"
+                d="M790.9,814.9H474.3v-38.7h312.2c-1.8-15.7-3.6-31.9-5.4-47.6H474.3v-34.5h302.9c-2-17.6-3.8-33.6-5.2-46.2 H474.2l0.1-23.2c0-0.1,0-0.2,0-0.2c0-0.1,0-0.1,0-0.2c-0.6-16.1-0.6-28.7-16.6-28.7h-0.1c-15.9,0.1-17.7,13.2-18.2,29.2 c0,0.1,0,0.1,0,0.2c0,0.1,0,0.1,0,0.1l-0.1,22.8h-91.7c-17.7,0-31.9,3.3-31.9,21.8c0,18.5,14.4,24.4,32.1,24.4h91.7v34.5h-91.7 c-17.2,0-31.2,5.4-31.2,23.6c0,18.4,14.3,23.9,31.2,23.9h91.7v38.7h-113c-10.2,0-18.5,8.5-18.5,18.9v15.9 c0,10.4,8.3,18.9,18.5,18.9h28.3v87.7c0,6,4.9,10.9,10.9,10.9h13.3c6,0,10.9-4.9,10.9-10.9v-87.7h49.6v73.7 c0,6,4.8,10.9,10.8,10.9h12.5c6,0,10.9-4.9,10.9-10.9v-73.7h323.5C795.6,856.1,793.4,837,790.9,814.9z"
+              />
+            </svg>
+            <svg viewBox="0 0 1500 1500" width="4rem" height="4rem">
+              <circle fill="#d8b520" cx="754.3" cy="756.7" r="736.7" />
+              <path
+                fill="#ffffff"
+                d="M1078.3,1018.1l4.1,0.8v0l-4-1.2l0.2-2.6l0-136.7h4.2l0,0l-4.2,0c0-10.5-3.4-20.4-9.7-28.7l-1-1.2L909.8,685 V578.7h4.2c11.6,0,22.3-7.4,26.7-18.4c4.3-10.8,1.6-23-6.8-31.1l-0.3-0.3l-163.6-156c-10.9-10.4-28.7-10.4-39.6,0L566.4,529.3 c-8.2,7.9-10.7,20.1-6.3,31.1c4.5,11.2,14.7,18.4,26.2,18.4h4.2l0,4.2v167.6h-4.7c-32.2,0-62.2,14.7-82.3,40.2L387.5,937.9 c-4.3,5.5-11,8.8-17.8,8.8l-12.2,0c-22.2,0.6-39.8,18.6-39.8,41.1c0,22.7,17.6,41,40,41.6l12,0c32.5,0,62.7-14.7,82.8-40.2 l115.8-147.2c4.5-5.7,10.6-8.8,17.3-8.8h4.7v182.2c0,7.7,6.3,14,14,14h54.6c7.7,0,14-6.3,14-14V1005h154.1v10.4 c0,7.7,6.3,14,14,14h54.6c7.7,0,14-6.3,14-14v-69.6l63.7,65.9c9,9.3,21.1,14.4,34.1,14.4h60.2c0.4,0,0.7,0,1.1-0.1l2.5-0.6 l2.1,3.7l-1.6-3.9l1.4-0.7l2.8,3.2l0,0l-2.3-3.4l2-1.7l3.6,2.2v0l0,0l-3.2-2.7l0.3-0.4l3.5,2.3v0l-3.2-2.7l1.2-2.3l4,1.2 c0,0,0,0,0,0l-3.8-1.6L1078.3,1018.1z M954.1,812.1l43.3,44.8v98L954.1,910V812.1z M827.1,925.1H673.1v-68.3h154.1V925.1z M827.1,799.2H673.1v-33.6c0-42.6,34.7-77.3,77.3-77.3c42.3,0,76.8,34.7,76.8,77.3V799.2z M827.1,655.4l-6.9-6.2 c-19.1-17.2-43.9-26.7-69.8-26.7c-26,0-51,9.6-70.3,27l-6.9,6.2v-77h154.1V655.4z"
+              />
+            </svg>
+          </div>
+          <p>
+            <strong> ATS Agence, c’est avant tout une équipe d’experts...disponibles </strong>
+          </p>
+          <p>
+            ATS fournit le conseil et le cahier des charges à la réalisation d’un projet (mobilier urbain, signalétique,
+            EPI et vêtements)
+          </p>
+          <p>Assurant la conformité de celui-ci grâce à son bureau d’étude.</p>
+          <button class="button">Voir l'équipe &gt;</button>
         </div>
-      </ats-container>
-    </div>
+        <img id="section-7-img" src="./section-7.jpeg" alt="" />
+      </ats-lazy-section>
+    </ats-container>
     <ats-footer></ats-footer>
   </body>
 </html>

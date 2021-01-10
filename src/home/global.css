@@ -64,6 +64,11 @@ body {
   width: 2rem;
 }
 
+.white-board {
+  background-color: var(--white-ff);
+  position: relative;
+}
+
 #section-1 {
   display: block;
   max-height: 45rem;
