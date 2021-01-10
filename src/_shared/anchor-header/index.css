@@ -12,6 +12,7 @@
 
 :host([theme="dark"]) #label {
   color: var(--white-ff);
+  text-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
 }
 
 #anchor {
@@ -20,6 +21,7 @@
 }
 
 #icon {
+  filter: drop-shadow(0 0 0.5rem rgba(0, 0, 0, 0.25));
   height: 3rem;
   width: 3rem;
 }
@@ -32,13 +34,14 @@
   font-weight: bold;
   line-height: 1.2;
   position: absolute;
+  text-shadow: 0 0 0.5rem rgba(255, 255, 255, 0.8);
   text-transform: uppercase;
   word-break: keep-all;
 }
 
 @keyframes floating {
   from {
-    opacity: 0.25;
+    opacity: 0.6;
     transform: scale(1);
   }
   to {
