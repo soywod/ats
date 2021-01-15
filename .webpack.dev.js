@@ -7,6 +7,7 @@ module.exports = [
   "caves-et-cooperatives",
   "logistique-et-industrie",
   "travaux-publics",
+  "contact",
 ].map(page => {
   return {
     mode: "development",
