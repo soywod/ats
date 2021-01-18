@@ -12,7 +12,7 @@ button {
   border: none;
   border-radius: 2rem;
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
-  color: var(--black-22);
+  color: var(--gray-22);
   cursor: pointer;
   display: flex;
   grid-column: 1;

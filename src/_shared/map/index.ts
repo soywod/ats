@@ -12,7 +12,7 @@ class ATSMap extends HTMLElement {
     const root = this.attachShadow({mode: "open"});
     root.append(cssOfStr(css), tplOfStr(tpl));
 
-    this.map = Leaflet.map(findOrFail(root, HTMLDivElement, "map")).setView([51.505, -0.09], 13).setZoom(13);
+    this.map = Leaflet.map(findOrFail(root, HTMLDivElement, "map")).setView([43.4481999, 3.4144988], 15);
     this.map.scrollWheelZoom.disable();
 
     // TODO: add icon + popup

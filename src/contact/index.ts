@@ -1,3 +1,4 @@
+import "../_shared/button";
 import "../_shared/autoscroller";
 import "../_shared/carousel";
 import "../_shared/container";

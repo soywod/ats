@@ -1,7 +1,7 @@
 :root {
-  --black-00: #000000;
-  --black-22: #222222;
-  --black-44: #444444;
+  --gray-00: #000000;
+  --gray-22: #222222;
+  --gray-44: #444444;
   --blue-10: #101e32;
   --blue-25: #253f62;
   --blue-31: #313f56;
@@ -149,7 +149,7 @@ body {
 }
 
 #section-2-b-title {
-  color: var(--black-44);
+  color: var(--gray-44);
   font-size: 1.5rem;
   font-weight: bold;
   line-height: 1.1em;
@@ -350,7 +350,7 @@ body {
 }
 
 #section-5-c-title {
-  color: var(--black-44);
+  color: var(--gray-44);
   font-size: 1.5rem;
   font-weight: bold;
   line-height: 1.1em;
@@ -398,7 +398,7 @@ body {
 }
 
 #section-5-e-desc {
-  color: var(--black-44);
+  color: var(--gray-44);
   display: grid;
   font-size: 1.25rem;
   grid-row-gap: 1.5rem;
@@ -521,7 +521,7 @@ body {
 }
 
 #section-7-b-title {
-  color: var(--black-44);
+  color: var(--gray-44);
   font-size: 1.5rem;
   font-weight: bold;
   line-height: 1.1em;
@@ -696,7 +696,7 @@ body {
 }
 
 #section-9-c-title {
-  color: var(--black-44);
+  color: var(--gray-44);
   font-size: 1.5rem;
   font-weight: bold;
   line-height: 1.1em;

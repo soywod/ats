@@ -1,6 +1,6 @@
 :root {
-  --black-00: #000000;
-  --black-22: #222222;
+  --gray-00: #000000;
+  --gray-22: #222222;
   --blue-25: #253f62;
   --gray-66: #666666;
   --gray-cc: #cccccc;
@@ -104,7 +104,7 @@ body {
 }
 
 .section-3-button {
-  background-color: var(--black-22);
+  background-color: var(--gray-22);
   font-size: 1rem;
 }
 
@@ -239,7 +239,7 @@ body {
 
 #section-8 {
   background-color: var(--gray-ff);
-  color: var(--black-22);
+  color: var(--gray-22);
   padding: 6rem 0;
   position: relative;
 }
@@ -271,7 +271,7 @@ body {
 }
 
 #section-9-grid {
-  color: var(--black-22);
+  color: var(--gray-22);
   display: grid;
   grid-auto-flow: column;
   grid-column-gap: 3rem;

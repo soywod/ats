@@ -6,17 +6,17 @@
 }
 
 :host([theme="light"]) #button {
-  border: 0.25rem solid var(--black-22);
-  color: var(--black-22);
+  border: 0.25rem solid var(--gray-22);
+  color: var(--gray-22);
 }
 
 :host([theme="light"]) #button:hover {
-  background-color: var(--black-22);
+  background-color: var(--gray-22);
   color: var(--gray-ff);
 }
 
 :host([theme="light"]) #mention {
-  color: var(--black-22);
+  color: var(--gray-22);
 }
 
 #button {
@@ -48,7 +48,7 @@
 
 #button:hover {
   background-color: var(--gray-ff);
-  color: var(--black-22);
+  color: var(--gray-22);
   transform: scale(1.03);
 }
 

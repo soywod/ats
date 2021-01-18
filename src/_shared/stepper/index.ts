@@ -1,3 +1,4 @@
+import "../button";
 import "../lazy-section";
 
 import {cssOfStr, tplOfStr} from "../dom-utils";

@@ -31,12 +31,12 @@
 
 :host([sticky]) a,
 :host(:hover) a {
-  color: var(--black-22);
+  color: var(--gray-22);
 }
 
 :host([sticky]) a::after,
 :host(:hover) a::after {
-  background-color: var(--black-22);
+  background-color: var(--gray-22);
 }
 
 ats-container {
@@ -91,7 +91,7 @@ a:hover::after {
 }
 
 #subnav {
-  background-color: var(--black-22);
+  background-color: var(--gray-22);
   display: flex;
   height: 14rem;
   opacity: 1;

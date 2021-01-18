@@ -1,5 +1,5 @@
 :host {
-  background-color: var(--black-22);
+  background-color: var(--gray-22);
   color: var(--gray-ff);
   display: block;
   padding: 6rem 0 18rem 0;
@@ -27,7 +27,7 @@ ats-container {
 }
 
 #signature {
-  background-color: var(--black-00);
+  background-color: var(--gray-00);
   bottom: 0;
   color: var(--gray-66);
   font-size: 0.8rem;
