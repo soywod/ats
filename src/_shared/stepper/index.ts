@@ -1,4 +1,4 @@
-import "../button";
+import "../contact-link";
 import "../lazy-section";
 
 import {cssOfStr, tplOfStr} from "../dom-utils";

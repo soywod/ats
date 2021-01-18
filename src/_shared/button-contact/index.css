@@ -36,6 +36,7 @@
   justify-items: center;
   padding: 0.25rem 1rem;
   position: relative;
+  text-decoration: none;
   text-transform: uppercase;
   transition-duration: 1s, 150ms, 150ms, 150ms;
   transition-property: transform, background, color, border;
