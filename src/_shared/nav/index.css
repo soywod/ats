@@ -26,7 +26,7 @@
 
 :host([sticky]),
 :host(:hover) {
-  background-color: var(--white-ff);
+  background-color: var(--gray-ff);
 }
 
 :host([sticky]) a,
@@ -57,7 +57,7 @@ nav {
 }
 
 a {
-  color: var(--white-ff);
+  color: var(--gray-ff);
   font-family: Lato, sans-serif;
   font-size: 1rem;
   font-weight: 900;
@@ -70,7 +70,7 @@ a {
 }
 
 a::after {
-  background-color: var(--white-ff);
+  background-color: var(--gray-ff);
   border-radius: 4rem;
   bottom: 0;
   content: "";
@@ -122,7 +122,7 @@ a:hover::after {
 }
 
 .subnav-label {
-  color: var(--white-ff);
+  color: var(--gray-ff);
   display: inline-block;
   font-size: 1rem;
   font-weight: 700;

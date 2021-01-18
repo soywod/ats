@@ -15,7 +15,7 @@
   --green-28: #285301;
   --green-13: #132601;
   --red-7c: #7c210f;
-  --white-ff: #ffffff;
+  --gray-ff: #ffffff;
   --yellow-d8: #d8b520;
 
   --font-family: "Poppins", sans-serif;
@@ -33,7 +33,7 @@ body {
 }
 
 .title {
-  background-color: var(--white-ff);
+  background-color: var(--gray-ff);
   font-size: 3rem;
   margin: 0;
   padding: 3rem 0 1rem 0;
@@ -50,7 +50,7 @@ body {
   background-color: var(--yellow-d8);
   border: none;
   border-radius: 4rem;
-  color: var(--white-ff);
+  color: var(--gray-ff);
   cursor: pointer;
   display: inline-flex;
   font-family: var(--font-family-alt);
@@ -118,7 +118,7 @@ body {
 }
 
 #section-2-a-title {
-  color: var(--white-ff);
+  color: var(--gray-ff);
   font-size: 3rem;
   font-weight: bold;
   margin: 0;
@@ -178,7 +178,7 @@ body {
 }
 
 #section-2-c-title {
-  color: var(--white-ff);
+  color: var(--gray-ff);
   font-size: 2.5rem;
   font-weight: bold;
   line-height: 1.3em;
@@ -201,7 +201,7 @@ body {
 }
 
 #section-2-d-title {
-  color: var(--white-ff);
+  color: var(--gray-ff);
   font-size: 2.5rem;
   font-weight: bold;
   line-height: 1.3em;
@@ -260,7 +260,7 @@ body {
   background-color: var(--yellow-d8);
   border: none;
   border-radius: 4rem;
-  color: var(--white-ff);
+  color: var(--gray-ff);
   cursor: pointer;
   display: grid;
   font-family: Noto Sans JP, sans-serif;
@@ -305,8 +305,8 @@ body {
 
 #section-4 {
   align-items: center;
-  background-color: var(--white-ff);
-  border-color: var(--white-ff);
+  background-color: var(--gray-ff);
+  border-color: var(--gray-ff);
   display: grid;
   justify-items: flex-start;
   position: relative;
@@ -334,7 +334,7 @@ body {
 }
 
 #section-4-title {
-  color: var(--white-ff);
+  color: var(--gray-ff);
   font-size: 2.5rem;
   line-height: 1.25;
   margin: 0 0 1rem 0;
@@ -388,7 +388,7 @@ body {
 }
 
 #section-5-a-title {
-  color: var(--white-ff);
+  color: var(--gray-ff);
   font-size: 3rem;
   font-weight: bold;
   line-height: 1.2;
@@ -424,7 +424,7 @@ body {
 }
 
 #section-5-b-title {
-  color: var(--white-ff);
+  color: var(--gray-ff);
   font-size: 2.5rem;
   font-weight: bold;
   line-height: 1.3em;
@@ -473,7 +473,7 @@ body {
 }
 
 #section-5-d-title {
-  color: var(--white-ff);
+  color: var(--gray-ff);
   font-size: 2.5rem;
   font-weight: bold;
   line-height: 1.3em;
@@ -527,7 +527,7 @@ body {
 }
 
 #section-6-title {
-  color: var(--white-ff);
+  color: var(--gray-ff);
   font-size: 2.5rem;
   line-height: 1.25;
   margin: 0 0 1rem 0;
@@ -545,7 +545,7 @@ body {
 
 #section-7 {
   align-items: center;
-  background-color: var(--white-ff);
+  background-color: var(--gray-ff);
   display: grid;
   grid-auto-flow: column;
   grid-column: 1 / span 2;

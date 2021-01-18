@@ -1,6 +1,6 @@
 :host {
   background-color: var(--black-22);
-  color: var(--white-ff);
+  color: var(--gray-ff);
   display: block;
   padding: 6rem 0 18rem 0;
   position: relative;
@@ -44,5 +44,5 @@ ats-container {
 }
 
 #signature a:hover {
-  color: var(--white-ff);
+  color: var(--gray-ff);
 }

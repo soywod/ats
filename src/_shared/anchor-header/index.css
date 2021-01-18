@@ -11,7 +11,7 @@
 }
 
 :host([theme="dark"]) #label {
-  color: var(--white-ff);
+  color: var(--gray-ff);
   text-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
 }
 

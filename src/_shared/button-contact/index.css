@@ -12,7 +12,7 @@
 
 :host([theme="light"]) #button:hover {
   background-color: var(--black-22);
-  color: var(--white-ff);
+  color: var(--gray-ff);
 }
 
 :host([theme="light"]) #mention {
@@ -22,9 +22,9 @@
 #button {
   align-items: center;
   background-color: transparent;
-  border: 0.25rem solid var(--white-ff);
+  border: 0.25rem solid var(--gray-ff);
   border-radius: 4rem;
-  color: var(--white-ff);
+  color: var(--gray-ff);
   cursor: pointer;
   display: grid;
   font-family: Noto Sans JP, sans-serif;
@@ -47,7 +47,7 @@
 }
 
 #button:hover {
-  background-color: var(--white-ff);
+  background-color: var(--gray-ff);
   color: var(--black-22);
   transform: scale(1.03);
 }
@@ -78,7 +78,7 @@
 
 #mention {
   align-self: flex-end;
-  color: var(--white-ff);
+  color: var(--gray-ff);
   font-size: 0.625rem;
   grid-column: 1 / 1;
   grid-row: 1 / 1;

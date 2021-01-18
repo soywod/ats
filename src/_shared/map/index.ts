@@ -16,7 +16,7 @@ class ATSMap extends HTMLElement {
     this.map.scrollWheelZoom.disable();
 
     // TODO: add icon + popup
-    new Leaflet.Marker({lat: 51.505, lng: -0.09}).addTo(this.map);
+    /* new Leaflet.Marker({lat: 51.505, lng: -0.09}).addTo(this.map); */
     Leaflet.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
       attribution: "&copy; <a href=http://osm.org/copyright>OpenStreetMap</a> contributors",
     }).addTo(this.map);
