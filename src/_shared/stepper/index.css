@@ -42,3 +42,7 @@
   text-align: center;
   text-transform: uppercase;
 }
+
+ats-contact-link {
+  display: block;
+}

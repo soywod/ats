@@ -17,3 +17,7 @@
 p {
   font-size: 1rem;
 }
+
+ats-contact-link {
+  display: block;
+}

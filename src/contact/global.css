@@ -270,6 +270,10 @@ label {
   padding: 6rem 0;
 }
 
+#section-6 ats-contact-link {
+  display: block;
+}
+
 #section-6-title {
   color: var(--gray-44);
   font-size: 1.25rem;
