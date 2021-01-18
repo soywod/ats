@@ -8,7 +8,7 @@ import {ATSButtonContact} from "../button-contact";
 class ATSNav extends HTMLElement {
   private sticky = false;
   private contactBtn: ATSButtonContact;
-  private subnavBtn: HTMLAnchorElement;
+  private subnavBtn: HTMLButtonElement;
   private subnav: HTMLDivElement;
 
   public constructor() {
@@ -16,7 +16,7 @@ class ATSNav extends HTMLElement {
     const root = this.attachShadow({mode: "open"});
     root.append(cssOfStr(css), cssOfStr(cssLg), tplOfStr(tpl));
     this.contactBtn = findOrFail(root, ATSButtonContact, "button");
-    this.subnavBtn = findOrFail(root, HTMLAnchorElement, "subnav-btn");
+    this.subnavBtn = findOrFail(root, HTMLButtonElement, "subnav-btn");
     this.subnav = findOrFail(root, HTMLDivElement, "subnav");
   }
 

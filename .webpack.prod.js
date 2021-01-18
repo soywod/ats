@@ -8,6 +8,7 @@ module.exports = [
   "logistique-et-industrie",
   "travaux-publics",
   "contact",
+  "qui-sommes-nous",
 ].map(page => {
   return {
     mode: "production",
