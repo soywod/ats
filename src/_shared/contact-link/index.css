@@ -17,7 +17,7 @@ a {
   text-decoration: none;
   text-transform: uppercase;
   transition-duration: 1s;
-  transition-property: transform;
+  transition-property: transform, background;
   transition-timing-function: cubic-bezier(0, 0.75, 0.25, 1);
 }
 
@@ -26,6 +26,7 @@ a:focus {
 }
 
 a:hover {
+  background-color: var(--yellow-c4);
   transform: scale(1.03);
 }
 
