@@ -8,8 +8,8 @@ import iconUrl from "./marker.svg";
 
 console.log(iconUrl);
 
-const lat = 43.4481999;
-const lng = 3.4144988;
+const lat = 43.4491423;
+const lng = 3.4162896;
 
 class ATSMap extends HTMLElement {
   private map: Leaflet.Map;
