@@ -299,3 +299,45 @@ label {
   margin: 0;
   text-align: left;
 }
+
+@media (max-width: 100em) {
+  /* lg */
+}
+
+@media (max-width: 72em) {
+  /* md */
+}
+
+@media (max-width: 56em) {
+  /* sm */
+
+  #section-2 {
+    grid-auto-flow: row;
+    padding: 1rem 0;
+  }
+
+  .section-3-item {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  #section-4-imgs {
+    grid-auto-flow: row;
+    padding: 1rem;
+  }
+
+  #section-5 {
+    grid-auto-flow: row;
+  }
+
+  #section-5-content {
+    padding: 1rem 0;
+  }
+
+  #section-6-trombi {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 31em) {
+  /* xs */
+}
