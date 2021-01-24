@@ -1,6 +1,5 @@
 import {cssOfStr, tplOfStr, findOrFail} from "../../_shared/dom-utils";
 import css from "./index.css";
-import cssLg from "./index.lg.css";
 import tpl from "./index.html";
 
 import img1 from "./image-1.svg";
@@ -19,7 +18,7 @@ class ATSSection2 extends HTMLElement {
   public constructor() {
     super();
     const root = this.attachShadow({mode: "open"});
-    root.append(cssOfStr(css), cssOfStr(cssLg), tplOfStr(tpl));
+    root.append(cssOfStr(css), tplOfStr(tpl));
     this.img = findOrFail(root, HTMLImageElement, "image");
     this.alt = findOrFail(root, HTMLSpanElement, "alt");
   }
