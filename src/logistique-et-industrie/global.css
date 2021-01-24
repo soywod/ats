@@ -607,3 +607,40 @@ body {
     margin: 17.5rem 0;
   }
 }
+
+@media (max-width: 72em) {
+  /* md */
+}
+
+@media (max-width: 56em) {
+  /* sm */
+
+  #section-2,
+  #section-5,
+  #section-7 {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  #section-2-a,
+  #section-2-b,
+  #section-2-c,
+  #section-2-d,
+  #section-2-e,
+  #section-5-a,
+  #section-5-b,
+  #section-5-c,
+  #section-5-d,
+  #section-5-e,
+  #section-7-a,
+  #section-7-b,
+  #section-7-c,
+  #section-7-d,
+  #section-7-e {
+    grid-column: 1;
+    grid-row: inherit;
+  }
+}
+
+@media (max-width: 31em) {
+  /* xs */
+}

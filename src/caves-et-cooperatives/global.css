@@ -526,3 +526,43 @@ body {
     height: 10rem;
   }
 }
+
+@media (max-width: 72em) {
+  /* md */
+}
+
+@media (max-width: 56em) {
+  /* sm */
+
+  #section-2,
+  #section-5 {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  #section-2-a,
+  #section-2-b,
+  #section-2-c,
+  #section-2-d,
+  #section-2-e,
+  #section-5-a,
+  #section-5-b,
+  #section-5-c,
+  #section-5-d,
+  #section-5-e {
+    grid-column: 1;
+    grid-row: inherit;
+  }
+
+  #section-7 {
+    display: block;
+  }
+
+  #section-7-img {
+    height: inherit;
+    width: 100%;
+  }
+}
+
+@media (max-width: 31em) {
+  /* xs */
+}
