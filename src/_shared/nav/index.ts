@@ -1,6 +1,5 @@
 import {cssOfStr, tplOfStr, findOrFail} from "../dom-utils";
 import css from "./index.css";
-import cssLg from "./index.lg.css";
 import tpl from "./index.html";
 
 import {ATSButtonContact} from "../button-contact";
@@ -14,7 +13,7 @@ class ATSNav extends HTMLElement {
   public constructor() {
     super();
     const root = this.attachShadow({mode: "open"});
-    root.append(cssOfStr(css), cssOfStr(cssLg), tplOfStr(tpl));
+    root.append(cssOfStr(css), tplOfStr(tpl));
     this.contactBtn = findOrFail(root, ATSButtonContact, "button");
     this.subnavBtn = findOrFail(root, HTMLButtonElement, "subnav-btn");
     this.subnav = findOrFail(root, HTMLDivElement, "subnav");

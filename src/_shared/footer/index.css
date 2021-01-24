@@ -59,3 +59,33 @@ ats-container {
   height: 2rem;
   width: 2rem;
 }
+
+@media (max-width: 100em) {
+  /* lg */
+}
+
+@media (max-width: 72em) {
+  /* md */
+}
+
+@media (max-width: 56em) {
+  /* sm */
+
+  :host {
+    padding: 1rem 0;
+  }
+
+  ats-container {
+    grid-auto-flow: row;
+    grid-row-gap: 2rem;
+  }
+
+  #right,
+  #left {
+    text-align: center;
+  }
+}
+
+@media (max-width: 31em) {
+  /* xs */
+}

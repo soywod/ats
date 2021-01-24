@@ -150,3 +150,48 @@ nav button:focus {
   padding-top: 0.5rem;
   text-transform: uppercase;
 }
+
+@media (max-width: 100em) {
+  /* lg */
+
+  :host {
+    height: 7rem;
+  }
+
+  ats-container {
+    padding: 0.5rem 0;
+  }
+
+  a {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 72em) {
+  /* md */
+}
+
+@media (max-width: 56em) {
+  /* sm */
+
+  :host {
+    height: 5rem;
+  }
+
+  ats-container {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: minmax(0, 1fr);
+  }
+
+  .logo-link {
+    display: none !important;
+  }
+
+  ats-button-contact {
+    display: none !important;
+  }
+}
+
+@media (max-width: 31em) {
+  /* xs */
+}
