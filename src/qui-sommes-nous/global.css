@@ -274,8 +274,17 @@ label {
   border-left: 1px solid var(--gray-22);
 }
 
-.section-6-trombi-card-content > img {
+.section-6-trombi-card-img {
+  overflow: hidden;
+}
+
+.section-6-trombi-card-img:hover > img {
+  transform: scale(1.1);
+}
+
+.section-6-trombi-card-img > img {
   display: block;
+  transition: 250ms transform;
   width: 100%;
 }
 
