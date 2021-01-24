@@ -7,6 +7,7 @@
   --gray-66: #666666;
   --gray-cc: #cccccc;
   --gray-bb: #bbbbbb;
+  --gray-99: #999999;
   --gray-f4: #f4f4f4;
   --gray-f7: #f7f7f7;
   --gray-fc: #fcfcfc;
@@ -171,7 +172,6 @@ label {
 
 #section-4 {
   background-color: var(--gray-f4);
-  margin-bottom: 3rem;
   padding: 3rem 4rem 5rem 4rem;
   text-align: center;
 }
@@ -199,9 +199,14 @@ label {
 }
 
 #section-5 {
-  display: none;
+  display: grid;
+  grid-auto-columns: minmax(0, 1fr);
   grid-auto-flow: column;
-  grid-auto-flow: minmax(0, 1fr);
+  margin-bottom: 3rem;
+}
+
+#section-5 ats-carousel {
+  padding: 0;
 }
 
 #section-5-content {
@@ -211,6 +216,25 @@ label {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.section-5-image {
+  display: block;
+}
+
+#section-5-content h3 {
+  color: var(--gray-99);
+  margin: 1rem 0 0 0;
+}
+
+#section-5-content p {
+  color: var(--gray-99);
+  max-width: 25rem;
+  text-align: justify;
+}
+
+#section-5-btn-icon {
+  width: inherit;
 }
 
 #section-6 {

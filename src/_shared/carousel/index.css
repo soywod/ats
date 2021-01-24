@@ -22,7 +22,7 @@ button {
   justify-self: flex-start;
   padding: 0;
   transition-duration: 125ms;
-  transition-property: box-shadow transform;
+  transition-property: box-shadow, transform;
   width: 4rem;
   z-index: 2;
 }
@@ -42,26 +42,26 @@ svg {
 
 #prev {
   justify-self: flex-start;
-  transform: translateX(calc(-50% - 0.5rem));
+  margin-left: 0.5rem;
 }
 
 #prev:hover {
-  transform: translateX(calc(-50% - 0.5rem)) scale(1.1);
+  transform: scale(1.1);
 }
 
 #prev:active {
-  transform: translateX(calc(-50% - 0.5rem)) scale(1.05);
+  transform: scale(1.05);
 }
 
 #next {
   justify-self: flex-end;
-  transform: translateX(calc(50% + 0.5rem));
+  margin-right: 0.5rem;
 }
 
 #next:hover {
-  transform: translateX(calc(50% + 0.5rem)) scale(1.1);
+  transform: scale(1.1);
 }
 
 #next:active {
-  transform: translateX(calc(50% + 0.5rem)) scale(1.05);
+  transform: scale(1.05);
 }
