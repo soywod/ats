@@ -50,6 +50,6 @@
     "start": "webpack serve --config .webpack.dev.js --port 3000",
     "prebuild": "tsc",
     "build": "webpack --config .webpack.prod.js",
-    "postbuild": "cp static/_redirects dist/"
+    "postbuild": "cp static/* dist/"
   }
 }
