@@ -1,3 +1,3 @@
-https://atsagence.fr/                         /home/  301!
-https://atsagence.com/                        /home/  301!
-https://gallant-meninsky-c43afc.netlify.app/  /home/  301!
+https://atsagence.fr/                         /home/                      301!
+https://atsagence.com/*                       https://atsagence.fr/:splat 301!
+https://gallant-meninsky-c43afc.netlify.app/* https://atsagence.fr/:splat 301!
