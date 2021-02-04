@@ -41,9 +41,15 @@
       <source src="./section-7.mp4" type="video/mp4" />
     </video>
     <section id="section-1">
-      <video id="section-1-video" autoplay loop muted width="100%">
-        <source src="./section-1.mp4" type="video/mp4" />
-      </video>
+      <iframe
+        id="section-1-video"
+        frameborder="0"
+        src="https://youtube.com/embed/vnbvApC_N2Y?autoplay=1&controls=0&rel=0&showinfo=0&mute=1&loop=1"
+      >
+      </iframe>
+      <!-- <video id="section-1-video" autoplay loop muted width="100%"> -->
+      <!--   <source src="./section-1.mp4" type="video/mp4" /> -->
+      <!-- </video> -->
     </section>
     <ats-section-2></ats-section-2>
     <div class="white-board">
@@ -230,5 +236,15 @@
       </button>
     </div>
     <ats-footer></ats-footer>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-B4S494VLHK"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-B4S494VLHK");
+    </script>
   </body>
 </html>
