@@ -1,31 +1,3 @@
-:root {
-  --gray-00: #000000;
-  --gray-22: #222222;
-  --blue-25: #253f62;
-  --gray-66: #666666;
-  --gray-cc: #cccccc;
-  --gray-f4: #f4f4f4;
-  --gray-f7: #f7f7f7;
-  --green-42: #427b10;
-  --red-7c: #7c210f;
-  --gray-ff: #ffffff;
-  --yellow-d8: #d8b520;
-  --yellow-c4: #c49b0e;
-
-  --font-family: "Poppins", sans-serif;
-  --font-family-alt: "Lato", sans-serif;
-
-  --media-lg: 100em;
-  --media-md: 72em;
-  --media-sm: 56em;
-  --media-xs: 31em;
-}
-
-body {
-  font-family: var(--font-family);
-  margin: 0;
-}
-
 .title {
   background-color: var(--gray-ff);
   font-size: 3rem;

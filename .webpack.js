@@ -11,7 +11,6 @@ module.exports = [
   "qui-sommes-nous",
 ].map(page => {
   return {
-    mode: "development",
     entry: path.resolve(__dirname, "src", page, "index.ts"),
     output: {
       path: path.resolve(__dirname, "dist", page),
@@ -22,6 +21,10 @@ module.exports = [
     },
     module: {
       rules: [
+        {
+          test: /\.pug$/i,
+          use: ["html-loader", "pug-html-loader"],
+        },
         {
           test: /\.html$/i,
           use: {
@@ -70,7 +73,7 @@ module.exports = [
     },
     plugins: [
       new HtmlWebpackPlugin({
-        template: path.resolve(__dirname, "src", page, "index.html"),
+        template: path.resolve(__dirname, "src", page, "index.pug"),
         filename: "index.html",
         inject: "body",
       }),

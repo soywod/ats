@@ -1,0 +1,78 @@
+:root {
+  --blue-10: #101e32;
+  --blue-25: #253f62;
+  --blue-31: #313f56;
+  --gray-00: #000000;
+  --gray-22: #222222;
+  --gray-44: #444444;
+  --gray-4a: #4a4a4a;
+  --gray-66: #666666;
+  --gray-cc: #cccccc;
+  --gray-f4: #f4f4f4;
+  --gray-f7: #f7f7f7;
+  --gray-fa: #fafafa;
+  --gray-ff: #ffffff;
+  --green-13: #132601;
+  --green-28: #285301;
+  --green-42: #427b10;
+  --red-7c: #7c210f;
+  --red-4d: #470d01;
+  --red-7f: #7f2412;
+  --yellow-a5: #a56c39;
+  --yellow-c4: #c49b0e;
+  --yellow-c5: #c58d13;
+  --yellow-d8: #d8b520;
+  --yellow-fd: #fdf9e9;
+
+  --font-family: "Poppins", sans-serif;
+  --font-family-alt: "Lato", sans-serif;
+
+  --media-lg: 100em;
+  --media-md: 72em;
+  --media-sm: 56em;
+  --media-xs: 31em;
+}
+
+body {
+  font-family: var(--font-family);
+  margin: 0;
+}
+
+.title {
+  background-color: var(--gray-ff);
+  font-size: 3rem;
+  margin: 0;
+  padding: 3rem 0 1rem 0;
+  position: relative;
+  text-align: center;
+}
+
+.title strong {
+  color: var(--yellow-d8);
+}
+
+.button {
+  align-items: center;
+  background-color: var(--yellow-d8);
+  border: none;
+  border-radius: 4rem;
+  color: var(--gray-ff);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: var(--font-family-alt);
+  font-size: 1.25rem;
+  font-weight: 900;
+  justify-content: center;
+  padding: 0.6rem 2.5rem;
+  text-transform: uppercase;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button img {
+  height: 2rem;
+  margin-right: 1rem;
+  width: 2rem;
+}
