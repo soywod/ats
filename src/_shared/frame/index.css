@@ -11,3 +11,11 @@
   transition-property: opacity, transform;
   transition-timing-function: ease-out;
 }
+
+@media (max-width: 31em) {
+  /* xs */
+
+  :host {
+    border-width: 0 !important;
+  }
+}

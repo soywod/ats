@@ -72,7 +72,7 @@ ats-container {
   /* sm */
 
   :host {
-    padding: 1rem 0;
+    padding: 1rem 0 5rem 0;
   }
 
   ats-container {
@@ -88,4 +88,17 @@ ats-container {
 
 @media (max-width: 31em) {
   /* xs */
+
+  ats-container {
+    grid-row-gap: 1rem;
+  }
+
+  #logo {
+    width: 7.5rem;
+  }
+
+  #socials {
+    justify-content: center;
+    margin: 1rem 0 0 0;
+  }
 }

@@ -2,10 +2,6 @@ extends ../index.pug
 
 block append head
   title ATS Agence | Home
-  link(rel="preload", href="./section-2/image-1.svg", as="image")
-  link(rel="preload", href="./section-2/image-2.svg", as="image")
-  link(rel="preload", href="./section-2/image-3.svg", as="image")
-  link(rel="preload", href="./section-2/image-4.svg", as="image")
   link(rel="stylesheet", href="../global.css")
   link(rel="stylesheet", href="./global.css")
 
@@ -50,7 +46,7 @@ block content
         br
         |
         | qui vous conseillent et vous accompagnent
-      button.button
+      button#section-4-btn.button
         img(src="./section-4-icon.svg", alt="")
         |
         | Nous contacter ?

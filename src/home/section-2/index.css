@@ -34,8 +34,8 @@
   animation: spin cubic-bezier(0, 0.8, 1, 0.2) 4s infinite;
   grid-column: 1;
   grid-row: 1;
-  height: 200px;
-  width: 200px;
+  height: 12.5rem;
+  width: 12.5rem;
 }
 
 #alt {
@@ -60,8 +60,8 @@
   }
 
   #image {
-    height: 175px;
-    width: 175px;
+    height: 10rem;
+    width: 10rem;
   }
 
   #title {
@@ -112,8 +112,14 @@
     padding: 1rem;
   }
 
+  #image {
+    height: 7.5rem;
+    width: 7.5rem;
+  }
+
   #title,
   #alt {
     font-size: 1rem;
+    font-weight: normal;
   }
 }

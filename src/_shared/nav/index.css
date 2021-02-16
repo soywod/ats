@@ -178,15 +178,6 @@ nav button:focus {
     height: 5rem;
   }
 
-  ats-container {
-    grid-template-columns: minmax(0, 1fr);
-    grid-template-rows: minmax(0, 1fr);
-  }
-
-  .logo-link {
-    display: none !important;
-  }
-
   ats-button-contact {
     display: none !important;
   }
@@ -194,4 +185,61 @@ nav button:focus {
 
 @media (max-width: 31em) {
   /* xs */
+
+  :host {
+    height: 3.5rem;
+  }
+
+  ats-container {
+    padding: 0;
+  }
+
+  .logo {
+    height: 2rem;
+    padding: 0 1rem;
+  }
+
+  nav {
+    justify-content: space-evenly;
+  }
+
+  nav a,
+  nav button {
+    font-size: 0.6rem;
+    margin: 0 0.5rem;
+    padding: 1rem 0;
+  }
+
+  #subnav {
+    height: auto;
+  }
+
+  #subnav-container {
+    align-items: start;
+    align-self: inherit;
+    display: grid;
+    grid-auto-flow: row;
+    grid-auto-rows: minmax(0, 1fr);
+    grid-gap: 1rem;
+    grid-template-columns: minmax(0, 1fr);
+    justify-items: stretch;
+    padding: 1rem;
+  }
+
+  #subnav-container img {
+    height: 5rem;
+    width: auto;
+  }
+
+  .subnav-link {
+    align-items: center;
+    display: flex;
+    flex: 1;
+  }
+
+  .subnav-label {
+    font-size: 0.75rem;
+    margin-left: 1rem;
+    text-align: left;
+  }
 }

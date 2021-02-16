@@ -65,3 +65,22 @@ svg {
 #next:active {
   transform: scale(1.05);
 }
+
+@media (max-width: 31em) {
+  /* xs */
+
+  :host {
+    padding: 0 1rem;
+  }
+
+  button {
+    border-radius: 2.5rem;
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+
+  svg {
+    height: 1rem;
+    width: 1rem;
+  }
+}
