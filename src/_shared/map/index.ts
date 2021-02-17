@@ -1,4 +1,4 @@
-import Leaflet from "leaflet";
+import * as GoogleMaps from "@googlemaps/js-api-loader";
 
 import {cssOfStr, tplOfStr, findOrFail} from "../dom-utils";
 import css from "./index.css";
@@ -6,28 +6,31 @@ import tpl from "./index.html";
 
 import iconUrl from "./marker.svg";
 
-console.log(iconUrl);
-
 const lat = 43.4491423;
 const lng = 3.4162896;
 
 class ATSMap extends HTMLElement {
-  private map: Leaflet.Map;
-
   public constructor() {
     super();
     const root = this.attachShadow({mode: "open"});
     root.append(cssOfStr(css), tplOfStr(tpl));
+    const loader = new GoogleMaps.Loader({
+      apiKey: "AIzaSyAuEN_xiE_vdoeo2javFrvDlAFBPBcsiQ4",
+      version: "weekly",
+    });
 
-    this.map = Leaflet.map(findOrFail(root, HTMLDivElement, "map")).setView([lat, lng], 15);
-    this.map.scrollWheelZoom.disable();
+    loader.load().then(() => {
+      const map = new window.google.maps.Map(findOrFail(root, HTMLDivElement, "map"), {
+        center: {lat, lng},
+        zoom: 15,
+      });
 
-    // TODO: add icon + popup
-    new Leaflet.Marker({lat, lng}, {icon: new Leaflet.Icon({iconUrl, iconSize: [50, 50]})}).addTo(this.map);
-
-    Leaflet.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-      attribution: "&copy; <a href=http://osm.org/copyright>OpenStreetMap</a> contributors",
-    }).addTo(this.map);
+      new google.maps.Marker({
+        position: {lat, lng},
+        icon: iconUrl,
+        map: map,
+      });
+    });
   }
 }
 

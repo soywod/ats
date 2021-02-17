@@ -71,4 +71,13 @@ ats-contact-link {
 
 @media (max-width: 31em) {
   /* xs */
+
+  :host {
+    padding: 1rem;
+  }
+
+  #title {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
 }
