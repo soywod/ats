@@ -94,3 +94,11 @@
     transform: rotateZ(10deg);
   }
 }
+
+@media (max-width: 31em) {
+  /* xs */
+
+  #phone-number {
+    font-size: 1rem;
+  }
+}

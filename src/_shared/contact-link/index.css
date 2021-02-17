@@ -65,3 +65,14 @@ a:active {
 #phone {
   font-size: 1.5rem;
 }
+
+@media (max-width: 31em) {
+  /* xs */
+
+  #label {
+    font-size: 0.5rem;
+  }
+  #phone {
+    font-size: 1rem;
+  }
+}

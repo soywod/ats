@@ -49,3 +49,11 @@
     transform: scale(1.05);
   }
 }
+
+@media (max-width: 31em) {
+  /* xs */
+
+  :host {
+    display: none;
+  }
+}
