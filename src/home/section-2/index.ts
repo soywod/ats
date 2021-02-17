@@ -38,16 +38,15 @@ class ATSSection2 extends HTMLElement {
   }
 }
 
-customElements.define("ats-section-2", ATSSection2);
-customElements.whenDefined("ats-section-2").then(() => {
-  document.head.append(
-    ...imgs.map(href => {
-      let el = document.createElement("link");
-      el.setAttribute("rel", "preload");
-      el.setAttribute("href", href);
-      el.setAttribute("as", "image");
+document.head.append(
+  ...imgs.map(href => {
+    let el = document.createElement("link");
+    el.setAttribute("rel", "preload");
+    el.setAttribute("href", href);
+    el.setAttribute("as", "image");
 
-      return el;
-    }),
-  );
-});
+    return el;
+  }),
+);
+
+customElements.define("ats-section-2", ATSSection2);
