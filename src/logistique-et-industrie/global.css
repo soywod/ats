@@ -569,4 +569,81 @@
 
 @media (max-width: 31em) {
   /* xs */
+
+  #section-1-personnage {
+    display: none;
+  }
+
+  #section-2-d-conditions {
+    left: inherit;
+    right: 0.5rem;
+  }
+
+  #section-2,
+  #section-3 {
+    margin: 1rem 0;
+  }
+
+  #section-3 {
+    padding: 0;
+  }
+
+  #section-2-a,
+  #section-2-b,
+  #section-2-c,
+  #section-2-d,
+  #section-5-a,
+  #section-5-b,
+  #section-5-c,
+  #section-5-d,
+  #section-5-e-desc,
+  #section-7-b,
+  #section-7-c,
+  #section-7-d,
+  #section-9-b,
+  #section-9-c,
+  #section-9-d {
+    padding: 1rem;
+  }
+
+  [id$="-title"],
+  [id$="-subtitle"],
+  [id$="-p"] {
+    font-size: 1rem !important;
+    margin: 0.5rem 0;
+    max-width: inherit !important;
+  }
+
+  #section-2-a-title,
+  #section-5-a-title,
+  #section-7-a-title {
+    justify-self: start;
+    margin: 0 0 0 1rem;
+  }
+
+  #section-5-a {
+    padding: 0;
+  }
+
+  #section-5-a-1-img {
+    display: none;
+  }
+
+  #section-5-e-desc {
+    font-size: 1rem;
+  }
+
+  #section-5,
+  #section-7,
+  #section-8 {
+    padding: 1rem 0;
+  }
+
+  #section-8 {
+    padding: 0;
+  }
+
+  ats-contact-link {
+    display: none;
+  }
 }
