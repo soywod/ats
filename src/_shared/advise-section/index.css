@@ -21,3 +21,15 @@ p {
 ats-contact-link {
   display: block;
 }
+
+@media (max-width: 31em) {
+  /* xs */
+
+  :host {
+    padding: 1rem;
+  }
+
+  #title {
+    font-size: 1.25rem;
+  }
+}
