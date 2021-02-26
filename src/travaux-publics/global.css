@@ -124,6 +124,11 @@
   grid-gap: 1rem;
   grid-row: 3 / span 2;
   justify-items: flex-start;
+  position: relative;
+  text-decoration: none;
+}
+
+#section-2-d > ats-lazy-section {
   padding: 1rem 3rem;
 }
 
@@ -450,6 +455,7 @@
   grid-row: 3 / span 2;
   justify-items: flex-start;
   padding: 1rem 3rem;
+  text-decoration: none;
 }
 
 #section-7-d-title {
