@@ -303,6 +303,7 @@
   grid-row: 4;
   justify-items: flex-start;
   padding: 1rem 3rem;
+  text-decoration: none;
 }
 
 #section-5-d-title {
@@ -465,6 +466,7 @@
   grid-row: 4;
   justify-items: flex-start;
   padding: 1rem 3rem;
+  text-decoration: none;
 }
 
 #section-7-c-title {
