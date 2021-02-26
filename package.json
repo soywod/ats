@@ -53,6 +53,6 @@
     "start": "webpack serve --config .webpack.js --mode development --host 0.0.0.0 --port 3000",
     "prebuild": "tsc",
     "build": "webpack --config .webpack.js --mode production",
-    "postbuild": "cp static/* dist/"
+    "postbuild": "cp -r static/* dist/"
   }
 }
