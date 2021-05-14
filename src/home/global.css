@@ -10,6 +10,11 @@
   position: relative;
 }
 
+#section-1-image {
+  display: none;
+  width: 100%;
+}
+
 #section-1-video {
   display: block;
   height: 100%;
@@ -333,6 +338,14 @@
 
 @media (max-width: 31em) {
   /* xs */
+
+  #section-1-image {
+    display: block;
+  }
+
+  #section-1-video {
+    display: none;
+  }
 
   #section-4-title {
     font-size: 1rem;

@@ -23,6 +23,7 @@
   pointer-events: none;
   user-select: none;
   z-index: 1;
+  width: 25vw;
 }
 
 #section-2 {
